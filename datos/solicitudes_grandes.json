@@ -1,0 +1,4942 @@
+{
+  "tecnicos": [
+    {
+      "id": "T01",
+      "nombre": "Ana Torres",
+      "especialidades": [
+        "hardware",
+        "software"
+      ],
+      "capacidad": 2
+    },
+    {
+      "id": "T02",
+      "nombre": "Luis Ramírez",
+      "especialidades": [
+        "redes",
+        "accesos"
+      ],
+      "capacidad": 3
+    },
+    {
+      "id": "T03",
+      "nombre": "Marta Soto",
+      "especialidades": [],
+      "capacidad": 3
+    },
+    {
+      "id": "T04",
+      "nombre": "Pedro Núñez",
+      "especialidades": [
+        "hardware"
+      ],
+      "capacidad": 2
+    },
+    {
+      "id": "T05",
+      "nombre": "Sofía Vega",
+      "especialidades": [
+        "software",
+        "accesos"
+      ],
+      "capacidad": 2
+    },
+    {
+      "id": "T06",
+      "nombre": "Diego Herrera",
+      "especialidades": [
+        "redes"
+      ],
+      "capacidad": 3
+    },
+    {
+      "id": "T07",
+      "nombre": "Laura Campos",
+      "especialidades": [],
+      "capacidad": 2
+    },
+    {
+      "id": "T08",
+      "nombre": "Iván Morales",
+      "especialidades": [
+        "hardware",
+        "redes"
+      ],
+      "capacidad": 3
+    },
+    {
+      "id": "T09",
+      "nombre": "Paola Cruz",
+      "especialidades": [
+        "software"
+      ],
+      "capacidad": 3
+    },
+    {
+      "id": "T10",
+      "nombre": "Raúl Ortega",
+      "especialidades": [
+        "accesos",
+        "otro"
+      ],
+      "capacidad": 2
+    },
+    {
+      "id": "T11",
+      "nombre": "Elena Ríos",
+      "especialidades": [],
+      "capacidad": 3
+    },
+    {
+      "id": "T12",
+      "nombre": "Jorge Mendoza",
+      "especialidades": [
+        "redes",
+        "software"
+      ],
+      "capacidad": 2
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "S0001",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #1 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:01:00"
+    },
+    {
+      "id": "S0002",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #2 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:11:00"
+    },
+    {
+      "id": "S0003",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #3 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:15:00"
+    },
+    {
+      "id": "S0004",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #4 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:24:00"
+    },
+    {
+      "id": "S0005",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #5 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T08:32:00"
+    },
+    {
+      "id": "S0006",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #6 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:35:00"
+    },
+    {
+      "id": "S0007",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #7 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:47:00"
+    },
+    {
+      "id": "S0008",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #8 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:54:00"
+    },
+    {
+      "id": "S0009",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #9 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T08:58:00"
+    },
+    {
+      "id": "S0010",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #10 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T09:06:00"
+    },
+    {
+      "id": "S0011",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #11 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T09:13:00"
+    },
+    {
+      "id": "S0012",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #12 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T09:20:00"
+    },
+    {
+      "id": "S0013",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #13 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T09:28:00"
+    },
+    {
+      "id": "S0014",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #14 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T09:33:00"
+    },
+    {
+      "id": "S0015",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #15 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T09:43:00"
+    },
+    {
+      "id": "S0016",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #16 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T09:49:00"
+    },
+    {
+      "id": "S0017",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #17 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T09:57:00"
+    },
+    {
+      "id": "S0018",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #18 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T10:01:00"
+    },
+    {
+      "id": "S0019",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #19 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T10:11:00"
+    },
+    {
+      "id": "S0020",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #20 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T10:13:00"
+    },
+    {
+      "id": "S0021",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #21 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T10:22:00"
+    },
+    {
+      "id": "S0022",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #22 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T10:27:00"
+    },
+    {
+      "id": "S0023",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #23 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T10:34:00"
+    },
+    {
+      "id": "S0024",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #24 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T10:45:00"
+    },
+    {
+      "id": "S0025",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #25 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T10:48:00"
+    },
+    {
+      "id": "S0026",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #26 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T10:55:00"
+    },
+    {
+      "id": "S0027",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #27 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T11:03:00"
+    },
+    {
+      "id": "S0028",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #28 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T11:11:00"
+    },
+    {
+      "id": "S0029",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #29 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T11:18:00"
+    },
+    {
+      "id": "S0030",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #30 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T11:26:00"
+    },
+    {
+      "id": "S0031",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #31 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T11:35:00"
+    },
+    {
+      "id": "S0032",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #32 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T11:41:00"
+    },
+    {
+      "id": "S0033",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #33 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T11:49:00"
+    },
+    {
+      "id": "S0034",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #34 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T11:53:00"
+    },
+    {
+      "id": "S0035",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #35 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T12:00:00"
+    },
+    {
+      "id": "S0036",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #36 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T12:07:00"
+    },
+    {
+      "id": "S0037",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #37 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T12:16:00"
+    },
+    {
+      "id": "S0038",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #38 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T12:24:00"
+    },
+    {
+      "id": "S0039",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #39 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T12:31:00"
+    },
+    {
+      "id": "S0040",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #40 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T12:35:00"
+    },
+    {
+      "id": "S0041",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #41 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T12:40:00"
+    },
+    {
+      "id": "S0042",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #42 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T12:52:00"
+    },
+    {
+      "id": "S0043",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #43 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T12:58:00"
+    },
+    {
+      "id": "S0044",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #44 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T13:02:00"
+    },
+    {
+      "id": "S0045",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #45 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T13:10:00"
+    },
+    {
+      "id": "S0046",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #46 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T13:15:00"
+    },
+    {
+      "id": "S0047",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #47 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T13:26:00"
+    },
+    {
+      "id": "S0048",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #48 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T13:31:00"
+    },
+    {
+      "id": "S0049",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #49 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T13:41:00"
+    },
+    {
+      "id": "S0050",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #50 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T13:45:00"
+    },
+    {
+      "id": "S0051",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #51 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T13:51:00"
+    },
+    {
+      "id": "S0052",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #52 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T14:02:00"
+    },
+    {
+      "id": "S0053",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #53 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T14:06:00"
+    },
+    {
+      "id": "S0054",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #54 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T14:15:00"
+    },
+    {
+      "id": "S0055",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #55 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T14:19:00"
+    },
+    {
+      "id": "S0056",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #56 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T14:25:00"
+    },
+    {
+      "id": "S0057",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #57 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T14:33:00"
+    },
+    {
+      "id": "S0058",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #58 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T14:41:00"
+    },
+    {
+      "id": "S0059",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #59 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T14:49:00"
+    },
+    {
+      "id": "S0060",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #60 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T14:56:00"
+    },
+    {
+      "id": "S0061",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #61 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T15:01:00"
+    },
+    {
+      "id": "S0062",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #62 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T15:11:00"
+    },
+    {
+      "id": "S0063",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #63 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T15:15:00"
+    },
+    {
+      "id": "S0064",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #64 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T15:26:00"
+    },
+    {
+      "id": "S0065",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #65 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T15:30:00"
+    },
+    {
+      "id": "S0066",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #66 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T15:37:00"
+    },
+    {
+      "id": "S0067",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #67 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T15:42:00"
+    },
+    {
+      "id": "S0068",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #68 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T15:53:00"
+    },
+    {
+      "id": "S0069",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #69 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:01:00"
+    },
+    {
+      "id": "S0070",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #70 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:05:00"
+    },
+    {
+      "id": "S0071",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #71 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:14:00"
+    },
+    {
+      "id": "S0072",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #72 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T16:17:00"
+    },
+    {
+      "id": "S0073",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #73 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T16:28:00"
+    },
+    {
+      "id": "S0074",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #74 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:32:00"
+    },
+    {
+      "id": "S0075",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #75 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:38:00"
+    },
+    {
+      "id": "S0076",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #76 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T16:46:00"
+    },
+    {
+      "id": "S0077",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #77 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T16:56:00"
+    },
+    {
+      "id": "S0078",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #78 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T17:01:00"
+    },
+    {
+      "id": "S0079",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #79 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T17:10:00"
+    },
+    {
+      "id": "S0080",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #80 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T17:16:00"
+    },
+    {
+      "id": "S0081",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #81 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T17:21:00"
+    },
+    {
+      "id": "S0082",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #82 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T17:27:00"
+    },
+    {
+      "id": "S0083",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #83 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T17:34:00"
+    },
+    {
+      "id": "S0084",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #84 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T17:43:00"
+    },
+    {
+      "id": "S0085",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #85 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T17:50:00"
+    },
+    {
+      "id": "S0086",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #86 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T17:57:00"
+    },
+    {
+      "id": "S0087",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #87 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T18:04:00"
+    },
+    {
+      "id": "S0088",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #88 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T18:13:00"
+    },
+    {
+      "id": "S0089",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #89 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T18:20:00"
+    },
+    {
+      "id": "S0090",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #90 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T18:26:00"
+    },
+    {
+      "id": "S0091",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #91 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T18:35:00"
+    },
+    {
+      "id": "S0092",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #92 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T18:37:00"
+    },
+    {
+      "id": "S0093",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #93 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T18:49:00"
+    },
+    {
+      "id": "S0094",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #94 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T18:54:00"
+    },
+    {
+      "id": "S0095",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #95 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T18:59:00"
+    },
+    {
+      "id": "S0096",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #96 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T19:09:00"
+    },
+    {
+      "id": "S0097",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #97 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T19:15:00"
+    },
+    {
+      "id": "S0098",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #98 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T19:21:00"
+    },
+    {
+      "id": "S0099",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #99 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T19:29:00"
+    },
+    {
+      "id": "S0100",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #100 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T19:38:00"
+    },
+    {
+      "id": "S0101",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #101 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T19:44:00"
+    },
+    {
+      "id": "S0102",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #102 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T19:47:00"
+    },
+    {
+      "id": "S0103",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #103 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T19:57:00"
+    },
+    {
+      "id": "S0104",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #104 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T20:05:00"
+    },
+    {
+      "id": "S0105",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #105 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T20:08:00"
+    },
+    {
+      "id": "S0106",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #106 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T20:15:00"
+    },
+    {
+      "id": "S0107",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #107 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T20:24:00"
+    },
+    {
+      "id": "S0108",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #108 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T20:33:00"
+    },
+    {
+      "id": "S0109",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #109 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T20:37:00"
+    },
+    {
+      "id": "S0110",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #110 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T20:43:00"
+    },
+    {
+      "id": "S0111",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #111 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T20:52:00"
+    },
+    {
+      "id": "S0112",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #112 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T20:58:00"
+    },
+    {
+      "id": "S0113",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #113 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T21:08:00"
+    },
+    {
+      "id": "S0114",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #114 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T21:15:00"
+    },
+    {
+      "id": "S0115",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #115 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T21:21:00"
+    },
+    {
+      "id": "S0116",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #116 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T21:26:00"
+    },
+    {
+      "id": "S0117",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #117 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T21:37:00"
+    },
+    {
+      "id": "S0118",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #118 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T21:43:00"
+    },
+    {
+      "id": "S0119",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #119 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T21:49:00"
+    },
+    {
+      "id": "S0120",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #120 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T21:56:00"
+    },
+    {
+      "id": "S0121",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #121 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:04:00"
+    },
+    {
+      "id": "S0122",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #122 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:08:00"
+    },
+    {
+      "id": "S0123",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #123 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:16:00"
+    },
+    {
+      "id": "S0124",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #124 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T22:23:00"
+    },
+    {
+      "id": "S0125",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #125 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:32:00"
+    },
+    {
+      "id": "S0126",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #126 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:35:00"
+    },
+    {
+      "id": "S0127",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #127 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:43:00"
+    },
+    {
+      "id": "S0128",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #128 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T22:50:00"
+    },
+    {
+      "id": "S0129",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #129 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T22:57:00"
+    },
+    {
+      "id": "S0130",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #130 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T23:07:00"
+    },
+    {
+      "id": "S0131",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #131 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T23:15:00"
+    },
+    {
+      "id": "S0132",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #132 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T23:22:00"
+    },
+    {
+      "id": "S0133",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #133 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T23:24:00"
+    },
+    {
+      "id": "S0134",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #134 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T23:36:00"
+    },
+    {
+      "id": "S0135",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #135 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T23:39:00"
+    },
+    {
+      "id": "S0136",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #136 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T23:46:00"
+    },
+    {
+      "id": "S0137",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #137 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T23:53:00"
+    },
+    {
+      "id": "S0138",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #138 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T00:02:00"
+    },
+    {
+      "id": "S0139",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #139 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T00:06:00"
+    },
+    {
+      "id": "S0140",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #140 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T00:15:00"
+    },
+    {
+      "id": "S0141",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #141 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T00:25:00"
+    },
+    {
+      "id": "S0142",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #142 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T00:29:00"
+    },
+    {
+      "id": "S0143",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #143 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T00:37:00"
+    },
+    {
+      "id": "S0144",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #144 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T00:45:00"
+    },
+    {
+      "id": "S0145",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #145 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T00:52:00"
+    },
+    {
+      "id": "S0146",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #146 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T00:55:00"
+    },
+    {
+      "id": "S0147",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #147 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T01:06:00"
+    },
+    {
+      "id": "S0148",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #148 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T01:14:00"
+    },
+    {
+      "id": "S0149",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #149 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T01:19:00"
+    },
+    {
+      "id": "S0150",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #150 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T01:25:00"
+    },
+    {
+      "id": "S0151",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #151 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T01:30:00"
+    },
+    {
+      "id": "S0152",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #152 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T01:37:00"
+    },
+    {
+      "id": "S0153",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #153 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T01:45:00"
+    },
+    {
+      "id": "S0154",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #154 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T01:56:00"
+    },
+    {
+      "id": "S0155",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #155 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T02:02:00"
+    },
+    {
+      "id": "S0156",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #156 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T02:10:00"
+    },
+    {
+      "id": "S0157",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #157 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T02:14:00"
+    },
+    {
+      "id": "S0158",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #158 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T02:21:00"
+    },
+    {
+      "id": "S0159",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #159 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T02:31:00"
+    },
+    {
+      "id": "S0160",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #160 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T02:37:00"
+    },
+    {
+      "id": "S0161",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #161 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T02:42:00"
+    },
+    {
+      "id": "S0162",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #162 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T02:48:00"
+    },
+    {
+      "id": "S0163",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #163 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T02:56:00"
+    },
+    {
+      "id": "S0164",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #164 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T03:03:00"
+    },
+    {
+      "id": "S0165",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #165 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T03:08:00"
+    },
+    {
+      "id": "S0166",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #166 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T03:16:00"
+    },
+    {
+      "id": "S0167",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #167 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T03:27:00"
+    },
+    {
+      "id": "S0168",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #168 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T03:34:00"
+    },
+    {
+      "id": "S0169",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #169 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T03:37:00"
+    },
+    {
+      "id": "S0170",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #170 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T03:48:00"
+    },
+    {
+      "id": "S0171",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #171 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T03:54:00"
+    },
+    {
+      "id": "S0172",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #172 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T04:01:00"
+    },
+    {
+      "id": "S0173",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #173 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T04:05:00"
+    },
+    {
+      "id": "S0174",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #174 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T04:13:00"
+    },
+    {
+      "id": "S0175",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #175 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T04:21:00"
+    },
+    {
+      "id": "S0176",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #176 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T04:27:00"
+    },
+    {
+      "id": "S0177",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #177 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T04:37:00"
+    },
+    {
+      "id": "S0178",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #178 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T04:43:00"
+    },
+    {
+      "id": "S0179",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #179 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T04:51:00"
+    },
+    {
+      "id": "S0180",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #180 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T04:57:00"
+    },
+    {
+      "id": "S0181",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #181 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T05:04:00"
+    },
+    {
+      "id": "S0182",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #182 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T05:12:00"
+    },
+    {
+      "id": "X0001",
+      "titulo": "",
+      "descripcion": "Reporte de usuario #1 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:01:00"
+    },
+    {
+      "id": "S0183",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #183 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T05:16:00"
+    },
+    {
+      "id": "S0184",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #184 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T05:21:00"
+    },
+    {
+      "id": "S0185",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #185 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T05:30:00"
+    },
+    {
+      "id": "S0186",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #186 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T05:35:00"
+    },
+    {
+      "id": "S0187",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #187 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T05:44:00"
+    },
+    {
+      "id": "S0188",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #188 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T05:54:00"
+    },
+    {
+      "id": "S0189",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #189 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T05:56:00"
+    },
+    {
+      "id": "S0190",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #190 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T06:03:00"
+    },
+    {
+      "id": "S0191",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #191 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T06:11:00"
+    },
+    {
+      "id": "S0192",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #192 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T06:17:00"
+    },
+    {
+      "id": "S0193",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #193 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T06:29:00"
+    },
+    {
+      "id": "S0194",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #194 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T06:34:00"
+    },
+    {
+      "id": "S0195",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #195 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T06:39:00"
+    },
+    {
+      "id": "S0001",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #374 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T03:33:00"
+    },
+    {
+      "id": "S0196",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #196 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T06:48:00"
+    },
+    {
+      "id": "S0197",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #197 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T06:53:00"
+    },
+    {
+      "id": "S0198",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #198 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T07:01:00"
+    },
+    {
+      "id": "S0199",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #199 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:10:00"
+    },
+    {
+      "id": "S0200",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #200 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:14:00"
+    },
+    {
+      "id": "S0201",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #201 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:22:00"
+    },
+    {
+      "id": "S0202",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #202 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:28:00"
+    },
+    {
+      "id": "S0203",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #203 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T07:35:00"
+    },
+    {
+      "id": "S0204",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #204 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:42:00"
+    },
+    {
+      "id": "S0205",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #205 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T07:52:00"
+    },
+    {
+      "id": "S0206",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #206 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T07:56:00"
+    },
+    {
+      "id": "S0207",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #207 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T08:05:00"
+    },
+    {
+      "id": "S0208",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #208 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T08:14:00"
+    },
+    {
+      "id": "S0209",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #209 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T08:16:00"
+    },
+    {
+      "id": "S0210",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #210 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T08:24:00"
+    },
+    {
+      "id": "S0211",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #211 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T08:33:00"
+    },
+    {
+      "id": "S0212",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #212 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T08:41:00"
+    },
+    {
+      "id": "S0213",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #213 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T08:48:00"
+    },
+    {
+      "id": "S0214",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #214 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T08:54:00"
+    },
+    {
+      "id": "S0215",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #215 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T09:02:00"
+    },
+    {
+      "id": "S0216",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #216 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T09:10:00"
+    },
+    {
+      "id": "S0217",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #217 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T09:12:00"
+    },
+    {
+      "id": "S0218",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #218 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T09:23:00"
+    },
+    {
+      "id": "S0219",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #219 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T09:31:00"
+    },
+    {
+      "id": "S0220",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #220 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T09:37:00"
+    },
+    {
+      "id": "S0221",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #221 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T09:41:00"
+    },
+    {
+      "id": "S0222",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #222 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T09:50:00"
+    },
+    {
+      "id": "S0223",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #223 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T09:59:00"
+    },
+    {
+      "id": "S0224",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #224 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:05:00"
+    },
+    {
+      "id": "S0225",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #225 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:09:00"
+    },
+    {
+      "id": "S0226",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #226 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:18:00"
+    },
+    {
+      "id": "S0227",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #227 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:27:00"
+    },
+    {
+      "id": "S0228",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #228 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T10:34:00"
+    },
+    {
+      "id": "S0229",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #229 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:37:00"
+    },
+    {
+      "id": "S0230",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #230 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:44:00"
+    },
+    {
+      "id": "S0231",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #231 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T10:52:00"
+    },
+    {
+      "id": "S0232",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #232 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T11:01:00"
+    },
+    {
+      "id": "S0233",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #233 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T11:05:00"
+    },
+    {
+      "id": "S0234",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #234 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T11:11:00"
+    },
+    {
+      "id": "S0235",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #235 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T11:22:00"
+    },
+    {
+      "id": "S0236",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #236 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T11:28:00"
+    },
+    {
+      "id": "S0237",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #237 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T11:32:00"
+    },
+    {
+      "id": "S0238",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #238 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T11:39:00"
+    },
+    {
+      "id": "S0239",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #239 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T11:46:00"
+    },
+    {
+      "id": "S0240",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #240 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T11:54:00"
+    },
+    {
+      "id": "S0241",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #241 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T12:05:00"
+    },
+    {
+      "id": "S0242",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #242 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T12:07:00"
+    },
+    {
+      "id": "X0002",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #204 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "urgentisima",
+      "fecha_creacion": "2026-11-03T07:42:00"
+    },
+    {
+      "id": "S0243",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #243 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T12:15:00"
+    },
+    {
+      "id": "S0244",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #244 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T12:25:00"
+    },
+    {
+      "id": "S0245",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #245 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T12:29:00"
+    },
+    {
+      "id": "S0246",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #246 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T12:35:00"
+    },
+    {
+      "id": "S0247",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #247 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T12:42:00"
+    },
+    {
+      "id": "S0248",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #248 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T12:49:00"
+    },
+    {
+      "id": "S0249",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #249 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T12:57:00"
+    },
+    {
+      "id": "S0250",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #250 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T13:06:00"
+    },
+    {
+      "id": "S0251",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #251 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T13:15:00"
+    },
+    {
+      "id": "S0252",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #252 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T13:21:00"
+    },
+    {
+      "id": "S0253",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #253 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T13:24:00"
+    },
+    {
+      "id": "S0254",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #254 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T13:33:00"
+    },
+    {
+      "id": "S0255",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #255 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T13:39:00"
+    },
+    {
+      "id": "S0256",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #256 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T13:50:00"
+    },
+    {
+      "id": "S0257",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #257 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T13:52:00"
+    },
+    {
+      "id": "S0258",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #258 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T14:00:00"
+    },
+    {
+      "id": "S0259",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #259 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T14:07:00"
+    },
+    {
+      "id": "S0260",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #260 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T14:15:00"
+    },
+    {
+      "id": "S0261",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #261 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T14:25:00"
+    },
+    {
+      "id": "S0262",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #262 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T14:31:00"
+    },
+    {
+      "id": "S0263",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #263 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T14:36:00"
+    },
+    {
+      "id": "S0264",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #264 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T14:44:00"
+    },
+    {
+      "id": "S0265",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #265 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T14:48:00"
+    },
+    {
+      "id": "S0266",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #266 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T14:55:00"
+    },
+    {
+      "id": "S0267",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #267 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T15:06:00"
+    },
+    {
+      "id": "S0268",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #268 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T15:12:00"
+    },
+    {
+      "id": "S0269",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #269 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T15:17:00"
+    },
+    {
+      "id": "S0270",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #270 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T15:23:00"
+    },
+    {
+      "id": "S0271",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #271 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T15:31:00"
+    },
+    {
+      "id": "S0272",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #272 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T15:40:00"
+    },
+    {
+      "id": "S0273",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #273 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T15:44:00"
+    },
+    {
+      "id": "S0274",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #274 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T15:56:00"
+    },
+    {
+      "id": "S0275",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #275 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T16:00:00"
+    },
+    {
+      "id": "S0276",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #276 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T16:08:00"
+    },
+    {
+      "id": "S0277",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #277 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T16:13:00"
+    },
+    {
+      "id": "S0278",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #278 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T16:19:00"
+    },
+    {
+      "id": "S0279",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #279 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T16:28:00"
+    },
+    {
+      "id": "S0280",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #280 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T16:33:00"
+    },
+    {
+      "id": "S0281",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #281 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T16:44:00"
+    },
+    {
+      "id": "S0282",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #282 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T16:47:00"
+    },
+    {
+      "id": "S0283",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #283 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T16:56:00"
+    },
+    {
+      "id": "S0284",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #284 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T17:02:00"
+    },
+    {
+      "id": "S0285",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #285 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T17:11:00"
+    },
+    {
+      "id": "S0286",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #286 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T17:19:00"
+    },
+    {
+      "id": "S0287",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #287 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T17:24:00"
+    },
+    {
+      "id": "S0288",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #288 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T17:34:00"
+    },
+    {
+      "id": "S0289",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #289 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T17:36:00"
+    },
+    {
+      "id": "S0290",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #290 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T17:48:00"
+    },
+    {
+      "id": "S0291",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #291 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T17:51:00"
+    },
+    {
+      "id": "S0292",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #292 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T17:59:00"
+    },
+    {
+      "id": "S0293",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #293 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:04:00"
+    },
+    {
+      "id": "S0294",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #294 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T18:14:00"
+    },
+    {
+      "id": "X0004",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #122 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "ayer por la tarde"
+    },
+    {
+      "id": "S0295",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #295 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:22:00"
+    },
+    {
+      "id": "S0296",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #296 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:27:00"
+    },
+    {
+      "id": "S0297",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #297 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:33:00"
+    },
+    {
+      "id": "S0298",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #298 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:39:00"
+    },
+    {
+      "id": "S0299",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #299 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:49:00"
+    },
+    {
+      "id": "S0300",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #300 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T18:55:00"
+    },
+    {
+      "id": "S0301",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #301 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T19:02:00"
+    },
+    {
+      "id": "S0302",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #302 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T19:10:00"
+    },
+    {
+      "id": "S0303",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #303 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T19:18:00"
+    },
+    {
+      "id": "S0304",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #304 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T19:23:00"
+    },
+    {
+      "id": "S0305",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #305 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T19:28:00"
+    },
+    {
+      "id": "S0306",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #306 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T19:40:00"
+    },
+    {
+      "id": "S0307",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #307 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T19:47:00"
+    },
+    {
+      "id": "S0308",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #308 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T19:53:00"
+    },
+    {
+      "id": "S0309",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #309 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T19:58:00"
+    },
+    {
+      "id": "S0310",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #310 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T20:06:00"
+    },
+    {
+      "id": "S0311",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #311 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T20:12:00"
+    },
+    {
+      "id": "S0312",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #312 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T20:19:00"
+    },
+    {
+      "id": "S0313",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #313 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T20:26:00"
+    },
+    {
+      "id": "S0314",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #314 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T20:33:00"
+    },
+    {
+      "id": "S0315",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #315 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T20:39:00"
+    },
+    {
+      "id": "S0316",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #316 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T20:49:00"
+    },
+    {
+      "id": "S0317",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #317 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T20:52:00"
+    },
+    {
+      "id": "S0318",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #318 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T21:01:00"
+    },
+    {
+      "id": "S0319",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #319 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T21:08:00"
+    },
+    {
+      "id": "S0320",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #320 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T21:14:00"
+    },
+    {
+      "id": "S0321",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #321 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T21:21:00"
+    },
+    {
+      "id": "S0322",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #322 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T21:30:00"
+    },
+    {
+      "id": "S0323",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #323 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T21:37:00"
+    },
+    {
+      "id": "S0324",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #324 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T21:46:00"
+    },
+    {
+      "id": "S0325",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #325 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T21:53:00"
+    },
+    {
+      "id": "S0326",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #326 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T21:59:00"
+    },
+    {
+      "id": "S0327",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #327 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T22:05:00"
+    },
+    {
+      "id": "S0328",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #328 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T22:10:00"
+    },
+    {
+      "id": "S0329",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #329 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T22:17:00"
+    },
+    {
+      "id": "S0330",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #330 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T22:24:00"
+    },
+    {
+      "id": "S0331",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #331 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T22:30:00"
+    },
+    {
+      "id": "S0332",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #332 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T22:38:00"
+    },
+    {
+      "id": "S0333",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #333 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T22:46:00"
+    },
+    {
+      "id": "S0334",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #334 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T22:56:00"
+    },
+    {
+      "id": "S0335",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #335 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-03T23:03:00"
+    },
+    {
+      "id": "S0336",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #336 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T23:08:00"
+    },
+    {
+      "id": "S0337",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #337 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T23:16:00"
+    },
+    {
+      "id": "S0338",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #338 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T23:20:00"
+    },
+    {
+      "id": "S0339",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #339 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T23:27:00"
+    },
+    {
+      "id": "S0340",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #340 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-03T23:38:00"
+    },
+    {
+      "id": "S0341",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #341 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T23:42:00"
+    },
+    {
+      "id": "S0342",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #342 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-03T23:47:00"
+    },
+    {
+      "id": "S0343",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #343 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-03T23:58:00"
+    },
+    {
+      "id": "S0344",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #344 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:01:00"
+    },
+    {
+      "id": "S0345",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #345 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:12:00"
+    },
+    {
+      "id": "S0346",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #346 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T00:17:00"
+    },
+    {
+      "id": "S0347",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #347 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:26:00"
+    },
+    {
+      "id": "S0348",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #348 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T00:33:00"
+    },
+    {
+      "id": "S0349",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #349 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:39:00"
+    },
+    {
+      "id": "S0350",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #350 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:48:00"
+    },
+    {
+      "id": "S0351",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #351 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T00:55:00"
+    },
+    {
+      "id": "S0352",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #352 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T00:59:00"
+    },
+    {
+      "id": "S0353",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #353 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T01:05:00"
+    },
+    {
+      "id": "S0354",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #354 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T01:12:00"
+    },
+    {
+      "id": "S0355",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #355 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T01:21:00"
+    },
+    {
+      "id": "S0356",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #356 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T01:28:00"
+    },
+    {
+      "id": "S0357",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #357 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T01:36:00"
+    },
+    {
+      "id": "S0358",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #358 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T01:43:00"
+    },
+    {
+      "id": "S0359",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #359 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T01:49:00"
+    },
+    {
+      "id": "S0360",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #360 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T01:55:00"
+    },
+    {
+      "id": "S0361",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #361 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T02:03:00"
+    },
+    {
+      "id": "S0362",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #362 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T02:11:00"
+    },
+    {
+      "id": "S0363",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #363 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T02:17:00"
+    },
+    {
+      "id": "S0364",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #364 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T02:24:00"
+    },
+    {
+      "id": "S0365",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #365 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T02:30:00"
+    },
+    {
+      "id": "S0366",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #366 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T02:38:00"
+    },
+    {
+      "id": "S0367",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #367 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T02:47:00"
+    },
+    {
+      "id": "S0368",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #368 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T02:50:00"
+    },
+    {
+      "id": "S0369",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #369 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T02:58:00"
+    },
+    {
+      "id": "S0370",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #370 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T03:04:00"
+    },
+    {
+      "id": "S0371",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #371 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T03:13:00"
+    },
+    {
+      "id": "S0372",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #372 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T03:17:00"
+    },
+    {
+      "id": "S0373",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #373 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T03:27:00"
+    },
+    {
+      "id": "S0374",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #374 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T03:33:00"
+    },
+    {
+      "id": "S0375",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #375 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T03:41:00"
+    },
+    {
+      "id": "S0376",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #376 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T03:47:00"
+    },
+    {
+      "id": "S0377",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #377 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T03:52:00"
+    },
+    {
+      "id": "S0378",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #378 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T04:02:00"
+    },
+    {
+      "id": "S0379",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #379 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T04:06:00"
+    },
+    {
+      "id": "S0380",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #380 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T04:15:00"
+    },
+    {
+      "id": "S0381",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #381 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T04:24:00"
+    },
+    {
+      "id": "S0382",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #382 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T04:32:00"
+    },
+    {
+      "id": "S0383",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #383 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T04:34:00"
+    },
+    {
+      "id": "S0384",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #384 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T04:46:00"
+    },
+    {
+      "id": "S0385",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #385 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T04:50:00"
+    },
+    {
+      "id": "S0386",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #386 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T04:55:00"
+    },
+    {
+      "id": "S0387",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #387 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T05:03:00"
+    },
+    {
+      "id": "S0388",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #388 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T05:12:00"
+    },
+    {
+      "id": "S0389",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #389 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T05:20:00"
+    },
+    {
+      "id": "S0390",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #390 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T05:24:00"
+    },
+    {
+      "id": "S0391",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #391 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T05:31:00"
+    },
+    {
+      "id": "S0392",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #392 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T05:39:00"
+    },
+    {
+      "id": "S0393",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #393 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T05:48:00"
+    },
+    {
+      "id": "S0394",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #394 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T05:53:00"
+    },
+    {
+      "id": "S0395",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #395 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T06:02:00"
+    },
+    {
+      "id": "S0396",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #396 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T06:09:00"
+    },
+    {
+      "id": "S0397",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #397 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T06:16:00"
+    },
+    {
+      "id": "S0398",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #398 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T06:19:00"
+    },
+    {
+      "id": "S0399",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #399 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T06:27:00"
+    },
+    {
+      "id": "S0400",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #400 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T06:33:00"
+    },
+    {
+      "id": "S0401",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #401 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T06:43:00"
+    },
+    {
+      "id": "S0402",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #402 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T06:47:00"
+    },
+    {
+      "id": "S0403",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #403 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T06:57:00"
+    },
+    {
+      "id": "S0404",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #404 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T07:03:00"
+    },
+    {
+      "id": "S0405",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #405 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T07:10:00"
+    },
+    {
+      "id": "S0406",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #406 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T07:15:00"
+    },
+    {
+      "id": "S0407",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #407 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T07:23:00"
+    },
+    {
+      "id": "S0408",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #408 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T07:33:00"
+    },
+    {
+      "id": "S0409",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #409 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T07:41:00"
+    },
+    {
+      "id": "S0410",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #410 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T07:45:00"
+    },
+    {
+      "id": "S0411",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #411 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T07:55:00"
+    },
+    {
+      "id": "S0412",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #412 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T08:01:00"
+    },
+    {
+      "id": "S0413",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #413 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T08:09:00"
+    },
+    {
+      "id": "S0414",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #414 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T08:11:00"
+    },
+    {
+      "id": "S0415",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #415 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T08:21:00"
+    },
+    {
+      "id": "S0416",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #416 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T08:27:00"
+    },
+    {
+      "id": "S0417",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #417 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T08:35:00"
+    },
+    {
+      "id": "S0418",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #418 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T08:42:00"
+    },
+    {
+      "id": "S0419",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #419 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T08:49:00"
+    },
+    {
+      "id": "S0420",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #420 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T08:56:00"
+    },
+    {
+      "id": "S0421",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #421 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:02:00"
+    },
+    {
+      "id": "S0422",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #422 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:08:00"
+    },
+    {
+      "id": "S0423",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #423 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T09:18:00"
+    },
+    {
+      "id": "S0424",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #424 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:24:00"
+    },
+    {
+      "id": "S0425",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #425 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:33:00"
+    },
+    {
+      "id": "S0426",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #426 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T09:40:00"
+    },
+    {
+      "id": "S0427",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #427 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:46:00"
+    },
+    {
+      "id": "S0428",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #428 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T09:52:00"
+    },
+    {
+      "id": "S0429",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #429 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:01:00"
+    },
+    {
+      "id": "S0430",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #430 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:06:00"
+    },
+    {
+      "id": "S0431",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #431 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T10:11:00"
+    },
+    {
+      "id": "S0432",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #432 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:20:00"
+    },
+    {
+      "id": "S0433",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #433 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:25:00"
+    },
+    {
+      "id": "S0434",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #434 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T10:35:00"
+    },
+    {
+      "id": "S0435",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #435 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T10:41:00"
+    },
+    {
+      "id": "S0436",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #436 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:45:00"
+    },
+    {
+      "id": "S0437",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #437 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T10:57:00"
+    },
+    {
+      "id": "S0438",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #438 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:04:00"
+    },
+    {
+      "id": "S0439",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #439 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T11:10:00"
+    },
+    {
+      "id": "S0440",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #440 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:17:00"
+    },
+    {
+      "id": "S0441",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #441 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:22:00"
+    },
+    {
+      "id": "S0442",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #442 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:32:00"
+    },
+    {
+      "id": "S0443",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #443 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:34:00"
+    },
+    {
+      "id": "S0444",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #444 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:43:00"
+    },
+    {
+      "id": "S0445",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #445 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:50:00"
+    },
+    {
+      "id": "S0446",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #446 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T11:59:00"
+    },
+    {
+      "id": "S0447",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #447 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T12:04:00"
+    },
+    {
+      "id": "S0448",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #448 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T12:09:00"
+    },
+    {
+      "id": "S0449",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #449 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T12:19:00"
+    },
+    {
+      "id": "S0450",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #450 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T12:24:00"
+    },
+    {
+      "id": "S0451",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #451 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T12:33:00"
+    },
+    {
+      "id": "S0452",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #452 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T12:39:00"
+    },
+    {
+      "id": "S0453",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #453 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T12:48:00"
+    },
+    {
+      "id": "S0454",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #454 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T12:53:00"
+    },
+    {
+      "id": "S0455",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #455 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T13:02:00"
+    },
+    {
+      "id": "S0456",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #456 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T13:05:00"
+    },
+    {
+      "id": "S0457",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #457 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T13:12:00"
+    },
+    {
+      "id": "S0458",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #458 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T13:24:00"
+    },
+    {
+      "id": "S0459",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #459 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T13:26:00"
+    },
+    {
+      "id": "S0460",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #460 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T13:35:00"
+    },
+    {
+      "id": "S0461",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #461 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T13:41:00"
+    },
+    {
+      "id": "S0462",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #462 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T13:52:00"
+    },
+    {
+      "id": "S0463",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #463 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T13:58:00"
+    },
+    {
+      "id": "S0464",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #464 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T14:02:00"
+    },
+    {
+      "id": "S0465",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #465 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T14:12:00"
+    },
+    {
+      "id": "S0466",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #466 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T14:15:00"
+    },
+    {
+      "id": "S0467",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #467 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T14:27:00"
+    },
+    {
+      "id": "S0468",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #468 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T14:33:00"
+    },
+    {
+      "id": "S0469",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #469 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T14:41:00"
+    },
+    {
+      "id": "S0470",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #470 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T14:48:00"
+    },
+    {
+      "id": "S0471",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #471 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T14:50:00"
+    },
+    {
+      "id": "S0472",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #472 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T14:59:00"
+    },
+    {
+      "id": "S0473",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #473 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T15:05:00"
+    },
+    {
+      "id": "S0474",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #474 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T15:14:00"
+    },
+    {
+      "id": "S0475",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #475 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T15:21:00"
+    },
+    {
+      "id": "S0476",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #476 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T15:26:00"
+    },
+    {
+      "id": "S0477",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #477 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T15:35:00"
+    },
+    {
+      "id": "S0478",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #478 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T15:43:00"
+    },
+    {
+      "id": "S0479",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #479 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T15:50:00"
+    },
+    {
+      "id": "S0480",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #480 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T15:53:00"
+    },
+    {
+      "id": "S0481",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #481 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T16:02:00"
+    },
+    {
+      "id": "S0482",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #482 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T16:11:00"
+    },
+    {
+      "id": "S0483",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #483 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T16:18:00"
+    },
+    {
+      "id": "S0484",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #484 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T16:25:00"
+    },
+    {
+      "id": "S0485",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #485 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T16:29:00"
+    },
+    {
+      "id": "S0486",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #486 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T16:35:00"
+    },
+    {
+      "id": "S0487",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #487 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T16:43:00"
+    },
+    {
+      "id": "S0488",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #488 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T16:51:00"
+    },
+    {
+      "id": "S0489",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #489 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T16:58:00"
+    },
+    {
+      "id": "S0490",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #490 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T17:03:00"
+    },
+    {
+      "id": "S0491",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #491 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T17:11:00"
+    },
+    {
+      "id": "S0492",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #492 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T17:17:00"
+    },
+    {
+      "id": "S0493",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #493 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T17:24:00"
+    },
+    {
+      "id": "S0494",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #494 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T17:31:00"
+    },
+    {
+      "id": "S0495",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #495 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T17:41:00"
+    },
+    {
+      "id": "S0496",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #496 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T17:47:00"
+    },
+    {
+      "id": "S0497",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #497 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T17:56:00"
+    },
+    {
+      "id": "S0498",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #498 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T17:59:00"
+    },
+    {
+      "id": "S0499",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #499 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T18:06:00"
+    },
+    {
+      "id": "S0500",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #500 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T18:18:00"
+    },
+    {
+      "id": "S0501",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #501 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T18:21:00"
+    },
+    {
+      "id": "S0502",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #502 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T18:31:00"
+    },
+    {
+      "id": "S0503",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #503 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T18:36:00"
+    },
+    {
+      "id": "S0504",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #504 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T18:46:00"
+    },
+    {
+      "id": "S0505",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #505 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T18:51:00"
+    },
+    {
+      "id": "S0506",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #506 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T18:55:00"
+    },
+    {
+      "id": "S0507",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #507 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T19:07:00"
+    },
+    {
+      "id": "S0508",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #508 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T19:11:00"
+    },
+    {
+      "id": "S0509",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #509 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T19:21:00"
+    },
+    {
+      "id": "S0510",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #510 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T19:26:00"
+    },
+    {
+      "id": "S0511",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #511 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T19:30:00"
+    },
+    {
+      "id": "S0512",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #512 en el área de software.",
+      "categoria": "software",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T19:41:00"
+    },
+    {
+      "id": "S0513",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #513 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T19:45:00"
+    },
+    {
+      "id": "S0514",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #514 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T19:52:00"
+    },
+    {
+      "id": "S0515",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #515 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T20:01:00"
+    },
+    {
+      "id": "S0516",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #516 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T20:07:00"
+    },
+    {
+      "id": "S0517",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #517 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T20:14:00"
+    },
+    {
+      "id": "S0518",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #518 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T20:22:00"
+    },
+    {
+      "id": "S0519",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #519 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T20:27:00"
+    },
+    {
+      "id": "S0520",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #520 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T20:37:00"
+    },
+    {
+      "id": "S0521",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #521 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T20:40:00"
+    },
+    {
+      "id": "S0522",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #522 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T20:50:00"
+    },
+    {
+      "id": "S0523",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #523 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T20:58:00"
+    },
+    {
+      "id": "S0524",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #524 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T21:04:00"
+    },
+    {
+      "id": "S0525",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #525 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T21:12:00"
+    },
+    {
+      "id": "S0526",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #526 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T21:19:00"
+    },
+    {
+      "id": "S0527",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #527 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T21:26:00"
+    },
+    {
+      "id": "S0528",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #528 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T21:33:00"
+    },
+    {
+      "id": "S0529",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #529 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T21:37:00"
+    },
+    {
+      "id": "S0530",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #530 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T21:44:00"
+    },
+    {
+      "id": "S0531",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #531 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T21:52:00"
+    },
+    {
+      "id": "S0532",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #532 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-04T21:59:00"
+    },
+    {
+      "id": "S0533",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #533 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T22:06:00"
+    },
+    {
+      "id": "S0534",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #534 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T22:12:00"
+    },
+    {
+      "id": "S0535",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #535 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T22:18:00"
+    },
+    {
+      "id": "S0536",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #536 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T22:26:00"
+    },
+    {
+      "id": "S0537",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #537 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T22:32:00"
+    },
+    {
+      "id": "S0538",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #538 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T22:40:00"
+    },
+    {
+      "id": "S0539",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #539 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T22:51:00"
+    },
+    {
+      "id": "S0540",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #540 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T22:58:00"
+    },
+    {
+      "id": "S0541",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #541 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T23:02:00"
+    },
+    {
+      "id": "S0542",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #542 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T23:09:00"
+    },
+    {
+      "id": "S0543",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #543 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-04T23:16:00"
+    },
+    {
+      "id": "S0544",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #544 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T23:25:00"
+    },
+    {
+      "id": "S0545",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #545 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T23:30:00"
+    },
+    {
+      "id": "S0546",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #546 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T23:37:00"
+    },
+    {
+      "id": "S0547",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #547 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T23:43:00"
+    },
+    {
+      "id": "S0548",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #548 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T23:51:00"
+    },
+    {
+      "id": "S0549",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #549 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-04T23:59:00"
+    },
+    {
+      "id": "S0550",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #550 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T00:05:00"
+    },
+    {
+      "id": "S0551",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #551 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T00:10:00"
+    },
+    {
+      "id": "S0552",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #552 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T00:19:00"
+    },
+    {
+      "id": "S0553",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #553 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T00:26:00"
+    },
+    {
+      "id": "S0554",
+      "titulo": "Laptop no enciende",
+      "descripcion": "Reporte de usuario #554 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T00:33:00"
+    },
+    {
+      "id": "S0555",
+      "titulo": "Préstamo de proyector",
+      "descripcion": "Reporte de usuario #555 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T00:41:00"
+    },
+    {
+      "id": "S0556",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #556 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T00:45:00"
+    },
+    {
+      "id": "S0557",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #557 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T00:57:00"
+    },
+    {
+      "id": "S0558",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #558 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T00:59:00"
+    },
+    {
+      "id": "S0559",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #559 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:09:00"
+    },
+    {
+      "id": "S0560",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #560 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:14:00"
+    },
+    {
+      "id": "S0561",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #561 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:22:00"
+    },
+    {
+      "id": "S0562",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #562 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:29:00"
+    },
+    {
+      "id": "S0563",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #563 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:38:00"
+    },
+    {
+      "id": "S0564",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #564 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T01:41:00"
+    },
+    {
+      "id": "S0565",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #565 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T01:52:00"
+    },
+    {
+      "id": "S0566",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #566 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T02:00:00"
+    },
+    {
+      "id": "S0567",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #567 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T02:04:00"
+    },
+    {
+      "id": "S0568",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #568 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T02:11:00"
+    },
+    {
+      "id": "S0569",
+      "titulo": "Disco duro con ruidos",
+      "descripcion": "Reporte de usuario #569 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-05T02:19:00"
+    },
+    {
+      "id": "S0570",
+      "titulo": "Error al abrir la hoja de cálculo",
+      "descripcion": "Reporte de usuario #570 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T02:27:00"
+    },
+    {
+      "id": "S0571",
+      "titulo": "Solicitar permisos de carpeta",
+      "descripcion": "Reporte de usuario #571 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T02:33:00"
+    },
+    {
+      "id": "S0572",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #572 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T02:40:00"
+    },
+    {
+      "id": "S0573",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #573 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T02:44:00"
+    },
+    {
+      "id": "S0574",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #574 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T02:53:00"
+    },
+    {
+      "id": "S0575",
+      "titulo": "Teclado con teclas dañadas",
+      "descripcion": "Reporte de usuario #575 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-05T02:59:00"
+    },
+    {
+      "id": "S0576",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #576 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-05T03:05:00"
+    },
+    {
+      "id": "S0577",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #577 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T03:17:00"
+    },
+    {
+      "id": "X0003",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #464 en el área de redes.",
+      "categoria": "cafeteria",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-04T14:02:00"
+    },
+    {
+      "id": "S0578",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #578 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T03:21:00"
+    },
+    {
+      "id": "S0579",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #579 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T03:30:00"
+    },
+    {
+      "id": "S0580",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #580 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T03:37:00"
+    },
+    {
+      "id": "S0581",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #581 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T03:42:00"
+    },
+    {
+      "id": "S0582",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #582 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T03:50:00"
+    },
+    {
+      "id": "S0583",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #583 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T03:59:00"
+    },
+    {
+      "id": "S0584",
+      "titulo": "VPN no conecta",
+      "descripcion": "Reporte de usuario #584 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T04:02:00"
+    },
+    {
+      "id": "S0585",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #585 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:11:00"
+    },
+    {
+      "id": "S0586",
+      "titulo": "Cuenta bloqueada",
+      "descripcion": "Reporte de usuario #586 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:20:00"
+    },
+    {
+      "id": "S0587",
+      "titulo": "Solicitud de capacitación",
+      "descripcion": "Reporte de usuario #587 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:24:00"
+    },
+    {
+      "id": "S0588",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #588 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:31:00"
+    },
+    {
+      "id": "S0589",
+      "titulo": "Monitor sin señal",
+      "descripcion": "Reporte de usuario #589 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:41:00"
+    },
+    {
+      "id": "S0590",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #590 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T04:46:00"
+    },
+    {
+      "id": "S0591",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #591 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T04:50:00"
+    },
+    {
+      "id": "S0592",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #592 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T05:02:00"
+    },
+    {
+      "id": "S0593",
+      "titulo": "Puerto de red sin servicio",
+      "descripcion": "Reporte de usuario #593 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-05T05:09:00"
+    },
+    {
+      "id": "S0594",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #594 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T05:15:00"
+    },
+    {
+      "id": "S0595",
+      "titulo": "Latencia alta en el servidor",
+      "descripcion": "Reporte de usuario #595 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T05:22:00"
+    },
+    {
+      "id": "S0596",
+      "titulo": "Revisión de inventario",
+      "descripcion": "Reporte de usuario #596 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-05T05:30:00"
+    },
+    {
+      "id": "S0597",
+      "titulo": "Aplicación se cierra sola",
+      "descripcion": "Reporte de usuario #597 en el área de software.",
+      "categoria": "software",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-05T05:37:00"
+    },
+    {
+      "id": "S0598",
+      "titulo": "Impresora atascada",
+      "descripcion": "Reporte de usuario #598 en el área de hardware.",
+      "categoria": "hardware",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T05:42:00"
+    },
+    {
+      "id": "S0599",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #599 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T05:51:00"
+    },
+    {
+      "id": "S0600",
+      "titulo": "Licencia expirada",
+      "descripcion": "Reporte de usuario #600 en el área de software.",
+      "categoria": "software",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-05T05:55:00"
+    }
+  ]
+}

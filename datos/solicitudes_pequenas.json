@@ -1,0 +1,126 @@
+{
+  "tecnicos": [
+    {
+      "id": "T01",
+      "nombre": "Ana Torres",
+      "especialidades": [
+        "hardware",
+        "software"
+      ],
+      "capacidad": 2
+    },
+    {
+      "id": "T02",
+      "nombre": "Luis Ramírez",
+      "especialidades": [
+        "redes",
+        "accesos"
+      ],
+      "capacidad": 3
+    },
+    {
+      "id": "T03",
+      "nombre": "Marta Soto",
+      "especialidades": [],
+      "capacidad": 2
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "S0001",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #1 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:03:00"
+    },
+    {
+      "id": "S0002",
+      "titulo": "Alta de usuario nuevo",
+      "descripcion": "Reporte de usuario #2 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T08:07:00"
+    },
+    {
+      "id": "S0003",
+      "titulo": "Restablecer contraseña",
+      "descripcion": "Reporte de usuario #3 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:17:00"
+    },
+    {
+      "id": "S0004",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #4 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:24:00"
+    },
+    {
+      "id": "S0005",
+      "titulo": "WiFi intermitente",
+      "descripcion": "Reporte de usuario #5 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:28:00"
+    },
+    {
+      "id": "S0006",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #6 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "critica",
+      "fecha_creacion": "2026-11-02T08:35:00"
+    },
+    {
+      "id": "S0007",
+      "titulo": "Consulta general de soporte",
+      "descripcion": "Reporte de usuario #7 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T08:47:00"
+    },
+    {
+      "id": "S0008",
+      "titulo": "Instalar paquete de oficina",
+      "descripcion": "Reporte de usuario #8 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:49:00"
+    },
+    {
+      "id": "S0009",
+      "titulo": "Reubicación de equipo",
+      "descripcion": "Reporte de usuario #9 en el área de otro.",
+      "categoria": "otro",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T08:59:00"
+    },
+    {
+      "id": "S0010",
+      "titulo": "Correo sin acceso",
+      "descripcion": "Reporte de usuario #10 en el área de accesos.",
+      "categoria": "accesos",
+      "prioridad": "alta",
+      "fecha_creacion": "2026-11-02T09:05:00"
+    },
+    {
+      "id": "S0011",
+      "titulo": "Actualización fallida del sistema",
+      "descripcion": "Reporte de usuario #11 en el área de software.",
+      "categoria": "software",
+      "prioridad": "baja",
+      "fecha_creacion": "2026-11-02T09:13:00"
+    },
+    {
+      "id": "S0012",
+      "titulo": "Sin acceso a internet",
+      "descripcion": "Reporte de usuario #12 en el área de redes.",
+      "categoria": "redes",
+      "prioridad": "media",
+      "fecha_creacion": "2026-11-02T09:21:00"
+    }
+  ]
+}
