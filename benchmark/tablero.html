@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablero comparativo Python · Java · C#</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface: #fcfcfb; --page: #f4f3f0; --ink: #0b0b0b; --ink2: #52514e; --muted: #7a7974;
+    --line: #dcdad4; --grid: #e7e5df;
+    --py: #2a78d6; --ja: #eb6834; --cs: #1baf7a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface: #1a1a19; --page: #121211; --ink: #f0efec; --ink2: #c3c2b7; --muted: #8f8e86;
+      --line: #34332f; --grid: #2a2926;
+      --py: #3987e5; --ja: #d95926; --cs: #199e70;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface: #1a1a19; --page: #121211; --ink: #f0efec; --ink2: #c3c2b7; --muted: #8f8e86;
+    --line: #34332f; --grid: #2a2926;
+    --py: #3987e5; --ja: #d95926; --cs: #199e70;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1120px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -.01em; }
+  h2 { font-size: 18px; margin: 0 0 4px; }
+  .sub { color: var(--ink2); margin: 2px 0 0; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+  .card p.nota { color: var(--ink2); margin: 0 0 12px; font-size: 14px; }
+  .aviso { border-left: 4px solid var(--ja); background: var(--surface); padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; color: var(--ink2); }
+  .controles { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-bottom: 10px; font-size: 14px; color: var(--ink2); }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { background: transparent; color: var(--ink2); border: 0; padding: 5px 12px; font: inherit; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+  .leyenda { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; margin: 4px 0 10px; }
+  .leyenda span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+  svg { width: 100%; height: auto; display: block; overflow: visible; }
+  svg text { fill: var(--ink2); font: 12px system-ui, sans-serif; }
+  svg .titulo-eje { fill: var(--muted); }
+  svg .rejilla { stroke: var(--grid); stroke-width: 1; }
+  svg .eje { stroke: var(--line); stroke-width: 1; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink2); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tabla-scroll { overflow-x: auto; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .lang { border: 1px solid var(--line); border-radius: 10px; padding: 14px; border-top: 4px solid var(--c); }
+  .lang h3 { margin: 0 0 6px; font-size: 16px; }
+  .lang h4 { margin: 10px 0 2px; font-size: 13px; color: var(--ink2); text-transform: uppercase; letter-spacing: .04em; }
+  .lang ul { margin: 0; padding-left: 18px; }
+  .ok { color: #0a7d3a; } .mal { color: #c0332f; }
+  :root[data-theme="dark"] .ok { color: #4cc27f; } :root[data-theme="dark"] .mal { color: #f08a86; }
+  @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .ok { color: #4cc27f; } :root:where(:not([data-theme="light"])) .mal { color: #f08a86; } }
+  .dificultad { display: inline-flex; gap: 3px; vertical-align: middle; }
+  .dificultad i { width: 14px; height: 14px; border-radius: 3px; background: var(--grid); }
+  .dificultad i.on { background: var(--c); }
+  #tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--surface); padding: 6px 10px; border-radius: 6px; font-size: 13px; opacity: 0; transition: opacity .08s; z-index: 5; max-width: 260px; }
+  button.tema { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font: inherit; cursor: pointer; }
+  details summary { cursor: pointer; color: var(--ink2); font-size: 14px; margin-top: 8px; }
+  code { background: var(--grid); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Python · Java · C#: el mismo sistema, tres lenguajes</h1>
+      <p class="sub">Sistema de gestión y priorización de solicitudes de soporte técnico (policode) · Equipo 5</p>
+    </div>
+    <button class="tema" id="tema" type="button">Cambiar tema</button>
+  </header>
+
+  <div id="avisos"></div>
+
+  <section class="card" id="s-resultados">
+    <h2>1. Resultados producidos por cada versión</h2>
+    <p class="nota">Cada versión carga el mismo archivo, valida, asigna y calcula tiempos. La <b>huella</b> es un SHA-256 de «id, técnico, tiempo, estado» de todas las solicitudes: si coincide, las versiones produjeron exactamente el mismo resultado.</p>
+    <div class="tabla-scroll"><table id="tabla-resultados"></table></div>
+  </section>
+
+  <section class="card" id="s-volumen">
+    <h2>2. Tiempo de ejecución según el volumen de datos</h2>
+    <p class="nota">Mediana de las repeticiones, en milisegundos (escala logarítmica: cada marca vale 10 veces la anterior). Menos es mejor.</p>
+    <div class="controles">
+      <span>Etapa:</span>
+      <div class="seg" id="sel-etapa" role="group" aria-label="Etapa">
+        <button data-v="proceso_ms" aria-pressed="true">Procesar (registrar + asignar)</button>
+        <button data-v="carga_ms" aria-pressed="false">Cargar + validar JSON</button>
+      </div>
+      <span>Hilos:</span>
+      <div class="seg" id="sel-hilos-vol" role="group" aria-label="Hilos"></div>
+    </div>
+    <div class="leyenda" id="ley-vol"></div>
+    <div id="graf-vol"></div>
+    <details><summary>Ver como tabla</summary><div class="tabla-scroll" id="tab-vol"></div></details>
+  </section>
+
+  <section class="card" id="s-hilos">
+    <h2>3. Procesamiento secuencial (1 hilo) frente a concurrente (2, 4, 8 hilos)</h2>
+    <p class="nota">Misma medición, variando el número de hilos del <i>pool</i> sobre un volumen fijo. En esta solución la asignación se hace dentro de un candado global (así se garantiza que las críticas salgan primero y que nadie ocupe el mismo cupo dos veces), por eso más hilos <b>no</b> siempre significan menos tiempo.</p>
+    <div class="controles">
+      <span>Volumen:</span>
+      <div class="seg" id="sel-vol-hilos" role="group" aria-label="Volumen"></div>
+    </div>
+    <div class="leyenda" id="ley-hilos"></div>
+    <div id="graf-hilos"></div>
+    <details><summary>Ver como tabla</summary><div class="tabla-scroll" id="tab-hilos"></div></details>
+  </section>
+
+  <section class="card" id="s-loc">
+    <h2>4. Cantidad de líneas de código (aproximada)</h2>
+    <p class="nota">Líneas no vacías, sin comentarios ni documentación. «Núcleo» = modelos, validación, reglas, despachador, estadísticas y persistencia; «Interfaz» = ventana gráfica; «Pruebas» = pruebas automatizadas.</p>
+    <div class="leyenda" id="ley-loc"></div>
+    <div id="graf-loc"></div>
+    <div class="tabla-scroll" id="tab-loc"></div>
+  </section>
+
+  <section class="card" id="s-dificultad">
+    <h2>5. Complejidad o dificultad percibida de implementación</h2>
+    <p class="nota">Valoración del equipo de 1 (muy fácil) a 5 (muy difícil). Es una opinión informada, no una medición: ajústenla en <code>DIFICULTAD</code> (al final de este archivo) con lo que realmente vivieron.</p>
+    <div class="tabla-scroll"><table id="tabla-dificultad"></table></div>
+  </section>
+
+  <section class="card" id="s-ventajas">
+    <h2>6. Ventajas y limitaciones de cada lenguaje (en este proyecto)</h2>
+    <div class="grid3" id="ventajas"></div>
+  </section>
+
+  <section class="card" id="s-clasif">
+    <h2>7. Clasificación de los lenguajes</h2>
+    <div class="tabla-scroll"><table id="tabla-clasif"></table></div>
+  </section>
+
+  <section class="card" id="s-metodo">
+    <h2>Cómo se midió</h2>
+    <p class="nota" id="metodo"></p>
+    <p class="nota">Para repetir la medición en su computadora: <code>python benchmark/generar_volumenes.py</code> y luego <code>python benchmark/ejecutar_benchmark.py</code>. Después abran este archivo otra vez.</p>
+  </section>
+</main>
+<div id="tip" role="tooltip"></div>
+
+<script src="resultados.js"></script>
+<script>
+"use strict";
+const R = window.RESULTADOS || { mediciones: [], entornos: {}, lineas_de_codigo: {}, hilos: [1, 2, 4, 8] };
+const LENGUAJES = [
+  { id: "python", nombre: "Python", color: "var(--py)" },
+  { id: "java", nombre: "Java", color: "var(--ja)" },
+  { id: "csharp", nombre: "C#", color: "var(--cs)" },
+];
+const NOMBRE_DATASET = {
+  solicitudes_pequenas: "Pequeño (12)", solicitudes_medias: "Medio (62)", solicitudes_grandes: "Grande (605)",
+  solicitudes_1000: "1 000", solicitudes_5000: "5 000", solicitudes_20000: "20 000", solicitudes_50000: "50 000",
+};
+const ORDEN = Object.keys(NOMBRE_DATASET);
+const presentes = LENGUAJES.filter(l => R.mediciones.some(m => m.lenguaje === l.id));
+const ausentes = LENGUAJES.filter(l => !presentes.includes(l));
+const datasetsMedidos = ORDEN.filter(d => R.mediciones.some(m => m.dataset === d));
+const hilosLista = (R.hilos || [1, 2, 4, 8]);
+const fmt = (v) => v === 0 ? "0" : v >= 100 ? v.toFixed(0) : v >= 10 ? v.toFixed(1) : v.toFixed(2);
+const $ = (id) => document.getElementById(id);
+const get = (len, ds, hilos) => R.mediciones.find(m => m.lenguaje === len && m.dataset === ds && m.hilos === hilos);
+
+/* ---------- Valoraciones y textos del equipo (editar aquí) ---------- */
+const DIFICULTAD = {
+  criterios: ["Modelado de datos y validación", "Concurrencia y sincronización", "Interfaz gráfica", "Pruebas automatizadas", "Configuración y ejecución del proyecto"],
+  valores: {
+    python: [1, 3, 2, 1, 1],
+    java: [3, 3, 4, 3, 3],
+    csharp: [2, 2, 3, 2, 2],
+  },
+  notas: {
+    python: "Menos código y sin compilación; pero la concurrencia con hilos no acelera trabajo de CPU (GIL).",
+    java: "Más código repetitivo (clases, getters, excepciones) y configuración con Maven; la concurrencia es muy completa.",
+    csharp: "Punto medio: tipado estático con menos ceremonia que Java; la interfaz (Windows Forms) solo corre en Windows.",
+  },
+};
+const VENTAJAS = {
+  python: {
+    pro: ["Menor cantidad de líneas: el mismo diseño ocupa menos código.", "Escritura y prueba rápidas; no hay compilación.", "Diccionarios, comprensiones y dataclasses hacen muy legible el modelo de datos.", "tkinter ya viene incluido con Python."],
+    con: ["Tipado dinámico: errores de tipo aparecen al ejecutar, no al compilar.", "Con el GIL, varios hilos no aceleran el cálculo; añaden costo de sincronización.", "Es el más lento en volúmenes grandes de procesamiento."],
+  },
+  java: {
+    pro: ["Tipado estático y fuerte: el compilador detecta muchos errores.", "java.util.concurrent ofrece colas, pools y candados muy completos.", "Misma aplicación en Windows, macOS y Linux (JVM).", "Rápido una vez que la JVM «calienta» (JIT)."],
+    con: ["Más verboso: es la versión con más líneas.", "Arranque más lento y mayor consumo de memoria por la JVM.", "Requiere Maven y dependencia externa (Gson) para leer JSON."],
+  },
+  csharp: {
+    pro: ["Tipado estático con sintaxis más compacta (records, LINQ, propiedades).", "Task y lock simplifican la concurrencia.", "System.Text.Json viene incluido en .NET; no hace falta dependencia externa.", "Windows Forms permite armar la interfaz con rapidez."],
+    con: ["La interfaz Windows Forms solo se ejecuta en Windows (el núcleo es multiplataforma).", "Requiere el SDK de .NET 8.", "Ecosistema de herramientas más ligado a Visual Studio."],
+  },
+};
+const CLASIF = [
+  ["Nivel de abstracción", "Alto", "Alto (gestiona memoria con recolector)", "Alto (gestiona memoria con recolector)"],
+  ["Forma de ejecución", "Interpretado: CPython compila a bytecode y lo ejecuta en su máquina virtual", "Compilado a bytecode y ejecutado en la JVM (con compilación JIT)", "Compilado a IL y ejecutado en el CLR de .NET (con compilación JIT)"],
+  ["Sistema de tipos", "Dinámico y fuerte (anotaciones opcionales, no verificadas al ejecutar)", "Estático y fuerte", "Estático y fuerte (con conversiones implícitas limitadas y <code>dynamic</code> opcional)"],
+  ["Propósito", "General; análisis de datos, automatización, web", "General; sistemas y servicios, empresarial, Android", "General; aplicaciones de escritorio, web, servicios, videojuegos"],
+  ["Paradigma principal", "Multiparadigma: imperativo y orientado a objetos", "Orientado a objetos", "Orientado a objetos"],
+  ["Paradigmas secundarios", "Funcional (<code>lambda</code>, comprensiones), concurrente (hilos)", "Funcional (lambdas y streams), concurrente (ExecutorService), orientado a eventos (Swing)", "Funcional (LINQ, lambdas), concurrente (Task, lock), orientado a eventos (Windows Forms)"],
+  ["Tipo de lenguaje", "Multiparadigma, imperativo", "Orientado a objetos, imperativo", "Orientado a objetos, imperativo"],
+];
+
+/* ---------- Avisos ---------- */
+(function avisos() {
+  const cont = $("avisos");
+  if (ausentes.length) {
+    const p = document.createElement("div");
+    p.className = "aviso";
+    p.innerHTML = `<b>Pendiente de medir: ${ausentes.map(l => l.nombre).join(", ")}.</b> Aquí no se pudo ejecutar (falta el SDK de .NET). En una computadora con .NET 8 ejecuten <code>python benchmark/ejecutar_benchmark.py --lenguajes csharp</code>; el resultado se mezcla con lo ya medido y este tablero lo muestra al recargar.`;
+    cont.appendChild(p);
+  }
+})();
+
+/* ---------- 1. Resultados ---------- */
+(function resultados() {
+  const t = $("tabla-resultados");
+  let h = `<tr><th>Volumen</th><th class="num">Válidas</th><th class="num">Inválidas omitidas</th><th class="num">Asignadas</th><th class="num">En cola</th>` +
+    LENGUAJES.map(l => `<th>Huella ${l.nombre}</th>`).join("") + `<th>¿Coinciden?</th></tr>`;
+  for (const ds of datasetsMedidos) {
+    const filas = presentes.map(l => get(l.id, ds, 1)).filter(Boolean);
+    const ref = filas[0];
+    const huellas = new Set(filas.map(f => f.huella));
+    const coinciden = presentes.length > 1 ? (huellas.size === 1 ? `<span class="ok">✔ Sí</span>` : `<span class="mal">✘ No</span>`) : "—";
+    h += `<tr><td>${NOMBRE_DATASET[ds]}</td><td class="num">${ref.solicitudes}</td><td class="num">${ref.invalidos}</td><td class="num">${ref.asignadas}</td><td class="num">${ref.solicitudes - ref.asignadas}</td>` +
+      LENGUAJES.map(l => { const m = get(l.id, ds, 1); return `<td><code>${m ? m.huella.slice(0, 10) : "pendiente"}</code></td>`; }).join("") + `<td>${coinciden}</td></tr>`;
+  }
+  t.innerHTML = h;
+})();
+
+/* ---------- Utilidades de gráficas ---------- */
+const tip = $("tip");
+function mostrarTip(ev, html) {
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const x = Math.min(ev.clientX + 14, window.innerWidth - 270);
+  tip.style.left = x + "px"; tip.style.top = (ev.clientY + 14) + "px";
+}
+function ocultarTip() { tip.style.opacity = 0; }
+function leyenda(id, lista) {
+  $(id).innerHTML = lista.map(l => `<span style="--c:${l.color}">${l.nombre}</span>`).join("");
+}
+function seg(id, opciones, actual, alCambiar) {
+  const cont = $(id);
+  cont.innerHTML = opciones.map(o => `<button type="button" data-v="${o.v}" aria-pressed="${o.v == actual}">${o.t}</button>`).join("");
+  cont.onclick = (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    cont.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    alCambiar(b.dataset.v);
+  };
+}
+function tabla(cols, filas) {
+  return `<table><tr>${cols.map((c, i) => `<th class="${i ? "num" : ""}">${c}</th>`).join("")}</tr>` +
+    filas.map(f => `<tr>${f.map((c, i) => `<td class="${i ? "num" : ""}">${c}</td>`).join("")}</tr>`).join("") + `</table>`;
+}
+function marcasLog(max, min) {
+  const marcas = []; for (let e = Math.floor(Math.log10(min)); e <= Math.ceil(Math.log10(max)); e++) marcas.push(Math.pow(10, e));
+  return marcas;
+}
+
+/* ---------- 2. Tiempo vs volumen (líneas, eje Y logarítmico) ---------- */
+let etapa = "proceso_ms", hilosVol = 1;
+function dibujarVolumen() {
+  const W = 1040, H = 360, m = { l: 62, r: 90, t: 26, b: 46 };
+  const valores = presentes.flatMap(l => datasetsMedidos.map(d => get(l.id, d, hilosVol)).filter(Boolean).map(x => x[etapa]));
+  const lo = Math.pow(10, Math.floor(Math.log10(Math.min(...valores)))), hi = Math.pow(10, Math.ceil(Math.log10(Math.max(...valores))));
+  const x = (i) => m.l + (W - m.l - m.r) * (i / (datasetsMedidos.length - 1));
+  const y = (v) => H - m.b - (H - m.t - m.b) * ((Math.log10(v) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo)));
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tiempo de ejecución por volumen de datos">`;
+  for (const v of marcasLog(hi, lo)) s += `<line class="rejilla" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${v >= 1 ? v : v}</text>`;
+  s += `<text class="titulo-eje" x="${m.l - 8}" y="${m.t - 14}" text-anchor="end">ms</text>`;
+  datasetsMedidos.forEach((d, i) => s += `<text x="${x(i)}" y="${H - m.b + 18}" text-anchor="middle">${NOMBRE_DATASET[d]}</text>`);
+  s += `<text class="titulo-eje" x="${(W - m.r + m.l) / 2}" y="${H - 6}" text-anchor="middle">Solicitudes en el archivo</text>`;
+  for (const l of presentes) {
+    const pts = datasetsMedidos.map((d, i) => ({ d, i, m: get(l.id, d, hilosVol) })).filter(p => p.m);
+    s += `<polyline fill="none" stroke="${l.color}" stroke-width="2.5" stroke-linejoin="round" points="${pts.map(p => `${x(p.i)},${y(p.m[etapa])}`).join(" ")}"/>`;
+    for (const p of pts) s += `<circle cx="${x(p.i)}" cy="${y(p.m[etapa])}" r="4.5" fill="${l.color}" stroke="var(--surface)" stroke-width="2"/>`;
+    const ult = pts[pts.length - 1];
+    s += `<text x="${x(ult.i) + 10}" y="${y(ult.m[etapa]) + 4}" style="fill:var(--ink)">${l.nombre} ${fmt(ult.m[etapa])}</text>`;
+  }
+  s += `<line id="cruz" class="eje" y1="${m.t}" y2="${H - m.b}" style="opacity:0"/>`;
+  datasetsMedidos.forEach((d, i) => {
+    const ancho = (W - m.l - m.r) / (datasetsMedidos.length - 1);
+    s += `<rect data-i="${i}" x="${x(i) - ancho / 2}" y="${m.t}" width="${ancho}" height="${H - m.t - m.b}" fill="transparent"/>`;
+  });
+  $("graf-vol").innerHTML = s + `</svg>`;
+  const svg = $("graf-vol").querySelector("svg"), cruz = svg.querySelector("#cruz");
+  svg.querySelectorAll("rect").forEach(r => {
+    r.onmousemove = (ev) => {
+      const i = +r.dataset.i, d = datasetsMedidos[i]; cruz.setAttribute("x1", x(i)); cruz.setAttribute("x2", x(i)); cruz.style.opacity = 1;
+      mostrarTip(ev, `<b>${NOMBRE_DATASET[d]}</b> · ${hilosVol} hilo(s)<br>` + presentes.map(l => { const q = get(l.id, d, hilosVol); return `${l.nombre}: ${q ? fmt(q[etapa]) + " ms" : "—"}`; }).join("<br>"));
+    };
+    r.onmouseleave = () => { ocultarTip(); cruz.style.opacity = 0; };
+  });
+  $("tab-vol").innerHTML = tabla(["Volumen", ...presentes.map(l => l.nombre + " (ms)")],
+    datasetsMedidos.map(d => [NOMBRE_DATASET[d], ...presentes.map(l => { const q = get(l.id, d, hilosVol); return q ? fmt(q[etapa]) : "—"; })]));
+}
+seg("sel-hilos-vol", hilosLista.map(h => ({ v: h, t: h })), hilosVol, v => { hilosVol = +v; dibujarVolumen(); });
+seg("sel-etapa", [{ v: "proceso_ms", t: "Procesar (registrar + asignar)" }, { v: "carga_ms", t: "Cargar + validar JSON" }], etapa, v => { etapa = v; dibujarVolumen(); });
+leyenda("ley-vol", presentes);
+
+/* ---------- 3. Secuencial vs concurrente (barras agrupadas) ---------- */
+let volHilos = datasetsMedidos[datasetsMedidos.length - 1];
+function dibujarHilos() {
+  const W = 1040, H = 340, m = { l: 62, r: 20, t: 26, b: 46 };
+  const vals = presentes.flatMap(l => hilosLista.map(h => get(l.id, volHilos, h)).filter(Boolean).map(q => q.proceso_ms));
+  const maxV = Math.max(...vals) * 1.1;
+  const y = (v) => H - m.b - (H - m.t - m.b) * (v / maxV);
+  const grupo = (W - m.l - m.r) / hilosLista.length, barra = Math.min(46, (grupo - 30) / presentes.length);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tiempo de procesamiento según número de hilos">`;
+  const paso = Math.pow(10, Math.floor(Math.log10(maxV))) * (maxV / Math.pow(10, Math.floor(Math.log10(maxV))) > 5 ? 2 : 1);
+  for (let v = 0; v <= maxV; v += paso / 1) s += `<line class="rejilla" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  s += `<text class="titulo-eje" x="${m.l - 8}" y="${m.t - 14}" text-anchor="end">ms</text>`;
+  hilosLista.forEach((h, gi) => {
+    const x0 = m.l + gi * grupo + (grupo - barra * presentes.length - 4 * (presentes.length - 1)) / 2;
+    s += `<text x="${m.l + gi * grupo + grupo / 2}" y="${H - m.b + 18}" text-anchor="middle">${h === 1 ? "1 hilo (secuencial)" : h + " hilos"}</text>`;
+    presentes.forEach((l, li) => {
+      const q = get(l.id, volHilos, h); if (!q) return;
+      const bx = x0 + li * (barra + 4), by = y(q.proceso_ms), alto = H - m.b - by;
+      s += `<path data-l="${l.id}" data-h="${h}" d="M${bx},${H - m.b} V${by + 4} Q${bx},${by} ${bx + 4},${by} H${bx + barra - 4} Q${bx + barra},${by} ${bx + barra},${by + 4} V${H - m.b} Z" fill="${l.color}"/>`;
+      s += `<text x="${bx + barra / 2}" y="${by - 5}" text-anchor="middle" style="fill:var(--ink)">${fmt(q.proceso_ms)}</text>`;
+    });
+  });
+  s += `<line class="eje" x1="${m.l}" x2="${W - m.r}" y1="${H - m.b}" y2="${H - m.b}"/>`;
+  $("graf-hilos").innerHTML = s + `</svg>`;
+  $("graf-hilos").querySelectorAll("path").forEach(p => {
+    p.onmousemove = (ev) => { const l = LENGUAJES.find(z => z.id === p.dataset.l), q = get(l.id, volHilos, +p.dataset.h);
+      mostrarTip(ev, `<b>${l.nombre}</b> · ${p.dataset.h} hilo(s)<br>Procesar: ${fmt(q.proceso_ms)} ms<br>Cargar: ${fmt(q.carga_ms)} ms`); };
+    p.onmouseleave = ocultarTip;
+  });
+  $("tab-hilos").innerHTML = tabla(["Hilos", ...presentes.map(l => l.nombre + " (ms)")],
+    hilosLista.map(h => [h, ...presentes.map(l => { const q = get(l.id, volHilos, h); return q ? fmt(q.proceso_ms) : "—"; })]));
+}
+seg("sel-vol-hilos", datasetsMedidos.map(d => ({ v: d, t: NOMBRE_DATASET[d] })), volHilos, v => { volHilos = v; dibujarHilos(); });
+leyenda("ley-hilos", presentes);
+
+/* ---------- 4. Líneas de código ---------- */
+(function loc() {
+  const L = R.lineas_de_codigo || {};
+  const partes = [["nucleo", "Núcleo"], ["interfaz", "Interfaz"], ["pruebas", "Pruebas"]];
+  const W = 1040, H = 300, m = { l: 62, r: 20, t: 26, b: 46 };
+  const maxV = Math.max(...LENGUAJES.flatMap(l => partes.map(([k]) => (L[l.id] || {})[k] || 0))) * 1.12;
+  const y = (v) => H - m.b - (H - m.t - m.b) * (v / maxV);
+  const grupo = (W - m.l - m.r) / partes.length, barra = 50;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Líneas de código por lenguaje">`;
+  for (let v = 0; v <= maxV; v += 200) s += `<line class="rejilla" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  partes.forEach(([k, nombre], gi) => {
+    const x0 = m.l + gi * grupo + (grupo - barra * 3 - 8) / 2;
+    s += `<text x="${m.l + gi * grupo + grupo / 2}" y="${H - m.b + 18}" text-anchor="middle">${nombre}</text>`;
+    LENGUAJES.forEach((l, li) => {
+      const v = (L[l.id] || {})[k]; if (v == null) return;
+      const bx = x0 + li * (barra + 4), by = y(v);
+      s += `<path d="M${bx},${H - m.b} V${by + 4} Q${bx},${by} ${bx + 4},${by} H${bx + barra - 4} Q${bx + barra},${by} ${bx + barra},${by + 4} V${H - m.b} Z" fill="${l.color}"><title>${l.nombre} · ${nombre}: ${v} líneas</title></path>`;
+      s += `<text x="${bx + barra / 2}" y="${by - 5}" text-anchor="middle" style="fill:var(--ink)">${v}</text>`;
+    });
+  });
+  s += `<line class="eje" x1="${m.l}" x2="${W - m.r}" y1="${H - m.b}" y2="${H - m.b}"/></svg>`;
+  $("graf-loc").innerHTML = s; leyenda("ley-loc", LENGUAJES);
+  $("tab-loc").innerHTML = tabla(["Lenguaje", "Núcleo", "Interfaz", "Pruebas", "Total", "Archivos del núcleo"],
+    LENGUAJES.map(l => { const a = L[l.id] || {}; return [l.nombre, a.nucleo, a.interfaz, a.pruebas, (a.nucleo + a.interfaz + a.pruebas), a.archivos_nucleo]; }));
+})();
+
+/* ---------- 5. Dificultad ---------- */
+(function dificultad() {
+  let h = `<tr><th>Criterio</th>${LENGUAJES.map(l => `<th>${l.nombre}</th>`).join("")}</tr>`;
+  DIFICULTAD.criterios.forEach((c, i) => {
+    h += `<tr><td>${c}</td>` + LENGUAJES.map(l => { const v = DIFICULTAD.valores[l.id][i];
+      return `<td><span class="dificultad" style="--c:${l.color}" role="img" aria-label="${v} de 5">${[1, 2, 3, 4, 5].map(n => `<i class="${n <= v ? "on" : ""}"></i>`).join("")}</span> ${v}/5</td>`; }).join("") + `</tr>`;
+  });
+  const prom = (id) => (DIFICULTAD.valores[id].reduce((a, b) => a + b, 0) / DIFICULTAD.criterios.length).toFixed(1);
+  h += `<tr><th>Promedio</th>${LENGUAJES.map(l => `<th>${prom(l.id)}</th>`).join("")}</tr>`;
+  h += `<tr><td>Por qué</td>${LENGUAJES.map(l => `<td>${DIFICULTAD.notas[l.id]}</td>`).join("")}</tr>`;
+  $("tabla-dificultad").innerHTML = h;
+})();
+
+/* ---------- 6 y 7. Ventajas, clasificación ---------- */
+$("ventajas").innerHTML = LENGUAJES.map(l => `<div class="lang" style="--c:${l.color}"><h3>${l.nombre}</h3><h4>Ventajas</h4><ul>${VENTAJAS[l.id].pro.map(x => `<li>${x}</li>`).join("")}</ul><h4>Limitaciones</h4><ul>${VENTAJAS[l.id].con.map(x => `<li>${x}</li>`).join("")}</ul></div>`).join("");
+$("tabla-clasif").innerHTML = `<tr><th>Criterio</th>${LENGUAJES.map(l => `<th>${l.nombre}</th>`).join("")}</tr>` + CLASIF.map(f => `<tr>${f.map((c, i) => i ? `<td>${c}</td>` : `<th>${c}</th>`).join("")}</tr>`).join("");
+
+/* ---------- Método ---------- */
+(function metodo() {
+  const e = R.entornos || {};
+  const partes = presentes.map(l => `${l.nombre} ${e[l.id] ? e[l.id].version : ""}`).join(" · ");
+  const base = e[presentes[0] && presentes[0].id] || {};
+  $("metodo").innerHTML = `Cada medición es la <b>mediana de ${R.repeticiones || 5} repeticiones</b> tras una ejecución de calentamiento. «Procesar» incluye registrar todas las solicitudes y asignar con el <i>pool</i> de hilos; «Cargar» incluye leer el JSON y validar cada registro. Versiones: ${partes}. Equipo de medición: ${base.sistema || "—"}, ${base.procesadores || "?"} procesadores. Los tiempos dependen del equipo; lo importante es la comparación entre lenguajes en la misma máquina. Los volúmenes de 1 000 a 50 000 son datos sintéticos generados con <code>generar_volumenes.py</code> (12 técnicos con capacidad 10), por eso siempre se asignan 120 solicitudes y el resto queda en cola.`;
+})();
+
+/* ---------- Tema ---------- */
+$("tema").onclick = () => {
+  const r = document.documentElement, oscuro = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme = oscuro ? "light" : "dark";
+};
+dibujarVolumen(); dibujarHilos();
+</script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+{
+  "mediciones": [
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 0.149,
+      "proceso_ms": 0.41,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 0.099,
+      "proceso_ms": 0.416,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 0.194,
+      "proceso_ms": 0.651,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 0.19,
+      "proceso_ms": 0.952,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 1,
+      "carga_ms": 0.335,
+      "proceso_ms": 0.581,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 2,
+      "carga_ms": 0.476,
+      "proceso_ms": 0.575,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 4,
+      "carga_ms": 0.322,
+      "proceso_ms": 0.797,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 8,
+      "carga_ms": 0.278,
+      "proceso_ms": 0.884,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 1,
+      "carga_ms": 2.366,
+      "proceso_ms": 2.363,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 2,
+      "carga_ms": 2.118,
+      "proceso_ms": 2.007,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 4,
+      "carga_ms": 2.526,
+      "proceso_ms": 2.44,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 8,
+      "carga_ms": 2.297,
+      "proceso_ms": 2.712,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 3.869,
+      "proceso_ms": 4.001,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 4.004,
+      "proceso_ms": 4.224,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 3.932,
+      "proceso_ms": 4.467,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 3.902,
+      "proceso_ms": 4.762,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 19.274,
+      "proceso_ms": 20.164,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 16.522,
+      "proceso_ms": 55.364,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 19.52,
+      "proceso_ms": 38.65,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 15.878,
+      "proceso_ms": 48.496,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 68.46,
+      "proceso_ms": 83.745,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 80.151,
+      "proceso_ms": 310.751,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 82.925,
+      "proceso_ms": 324.392,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 79.761,
+      "proceso_ms": 297.13,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 193.215,
+      "proceso_ms": 252.332,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 213.311,
+      "proceso_ms": 892.031,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 219.909,
+      "proceso_ms": 937.705,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "python",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 221.132,
+      "proceso_ms": 910.501,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 1.349,
+      "proceso_ms": 1.878,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 0.843,
+      "proceso_ms": 3.153,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 0.631,
+      "proceso_ms": 3.549,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_pequenas",
+      "solicitudes": 12,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 0.879,
+      "proceso_ms": 3.46,
+      "asignadas": 7,
+      "huella": "2d45543055412dd786608a3a9417c962578daaae0d9c1c6e255b1c9ce0bf0963"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 1,
+      "carga_ms": 3.351,
+      "proceso_ms": 1.021,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 2,
+      "carga_ms": 3.659,
+      "proceso_ms": 3.678,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 4,
+      "carga_ms": 0.853,
+      "proceso_ms": 3.271,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_medias",
+      "solicitudes": 60,
+      "invalidos": 2,
+      "hilos": 8,
+      "carga_ms": 0.751,
+      "proceso_ms": 4.829,
+      "asignadas": 13,
+      "huella": "16e861091dbea56f3ea002a8bef3685d9c971c308d734fd70987f183cb6722f2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 1,
+      "carga_ms": 9.64,
+      "proceso_ms": 4.298,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 2,
+      "carga_ms": 4.858,
+      "proceso_ms": 1.677,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 4,
+      "carga_ms": 3.175,
+      "proceso_ms": 7.184,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_grandes",
+      "solicitudes": 600,
+      "invalidos": 5,
+      "hilos": 8,
+      "carga_ms": 4.003,
+      "proceso_ms": 2.947,
+      "asignadas": 30,
+      "huella": "ff0646714191fb031dbdad873845b7242361f388f6b8672061deb684928185bb"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 10.499,
+      "proceso_ms": 2.405,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 7.706,
+      "proceso_ms": 2.422,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 7.067,
+      "proceso_ms": 4.818,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_1000",
+      "solicitudes": 1000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 5.963,
+      "proceso_ms": 5.918,
+      "asignadas": 120,
+      "huella": "7152fc5093cac80089c145110edfedd27110ec129a7b0932461ab3551a1c027e"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 31.186,
+      "proceso_ms": 8.69,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 12.018,
+      "proceso_ms": 6.106,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 9.198,
+      "proceso_ms": 7.224,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_5000",
+      "solicitudes": 5000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 10.341,
+      "proceso_ms": 9.85,
+      "asignadas": 120,
+      "huella": "1fdb0f351a78a20ec912716cc9f243c7122dabe8e79a40342b4dabf37d25bd3f"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 76.473,
+      "proceso_ms": 29.016,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 39.054,
+      "proceso_ms": 34.842,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 29.643,
+      "proceso_ms": 23.863,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_20000",
+      "solicitudes": 20000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 30.517,
+      "proceso_ms": 26.55,
+      "asignadas": 120,
+      "huella": "d811961922efc24a9db62256b8adaba6b0a33443f8b9ec8198bdc60fa24ba7fc"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 1,
+      "carga_ms": 159.954,
+      "proceso_ms": 89.103,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 2,
+      "carga_ms": 120.472,
+      "proceso_ms": 152.656,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 4,
+      "carga_ms": 152.014,
+      "proceso_ms": 84.785,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    },
+    {
+      "lenguaje": "java",
+      "dataset": "solicitudes_50000",
+      "solicitudes": 50000,
+      "invalidos": 0,
+      "hilos": 8,
+      "carga_ms": 135.594,
+      "proceso_ms": 85.625,
+      "asignadas": 120,
+      "huella": "82e5b0f9dfbf82c74554b78d948b435beb9ade7c5d56511e106b504d237b5ba2"
+    }
+  ],
+  "entornos": {
+    "python": {
+      "version": "3.13.18",
+      "sistema": "Linux 6.18.44-fc-v595",
+      "procesadores": 2,
+      "fecha": "2026-11-17T19:27:28"
+    },
+    "java": {
+      "version": "openjdk version \"21.0.12.1\" 2026-08-18",
+      "sistema": "Linux 6.18.44-fc-v595",
+      "procesadores": 2,
+      "fecha": "2026-11-17T19:27:42"
+    }
+  },
+  "lineas_de_codigo": {
+    "python": {
+      "nucleo": 374,
+      "interfaz": 291,
+      "pruebas": 205,
+      "archivos_nucleo": 8
+    },
+    "java": {
+      "nucleo": 698,
+      "interfaz": 485,
+      "pruebas": 284,
+      "archivos_nucleo": 13
+    },
+    "csharp": {
+      "nucleo": 636,
+      "interfaz": 541,
+      "pruebas": 302,
+      "archivos_nucleo": 9
+    }
+  },
+  "repeticiones": 5,
+  "hilos": [
+    1,
+    2,
+    4,
+    8
+  ]
+}

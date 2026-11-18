@@ -23,3 +23,6 @@ Thumbs.db
 
 # Resultados generados al guardar desde la interfaz
 datos/resultados*.json
+
+# Datos sintéticos del benchmark (se regeneran con benchmark/generar_volumenes.py)
+benchmark/volumenes/

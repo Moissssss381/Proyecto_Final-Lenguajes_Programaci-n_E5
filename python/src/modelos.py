@@ -1,50 +1,126 @@
-import datetime
+"""Modelos del dominio: enumeraciones, solicitudes y técnicos."""
+from dataclasses import dataclass, field
+from datetime import datetime
+from enum import Enum
+from typing import Optional
 
-class Prioridad:
-    def __init__(self, nombre, orden, horas_max):
-        self.nombre = nombre
-        self.orden = orden
-        self.horas_max = horas_max
+from errores import ErrorSoporte, ErrorValidacion
 
-PRIORIDADES = {
-    "critica": Prioridad("critica", 0, 1),
-    "alta": Prioridad("alta", 1, 2),
-    "media": Prioridad("media", 2, 8),
-    "baja": Prioridad("baja", 3, 24)
-}
 
-CATEGORIAS = ["hardware", "software", "redes", "accesos", "otro"]
-ESTADOS = ["pendiente", "asignada", "resuelta"]
+class _EnumTexto(Enum):
+    """Enumeración con etiqueta de texto y conversión desde texto."""
 
+    def __str__(self):
+        return self.etiqueta
+
+    @classmethod
+    def desde_texto(cls, texto):
+        if isinstance(texto, str):
+            normalizado = texto.strip().lower()
+            for miembro in cls:
+                if miembro.etiqueta == normalizado:
+                    return miembro
+        raise ErrorValidacion(f"{cls.__name__} inválida: {texto}")
+
+
+class Categoria(_EnumTexto):
+    HARDWARE = "hardware"
+    SOFTWARE = "software"
+    REDES = "redes"
+    ACCESOS = "accesos"
+    OTRO = "otro"
+
+    @property
+    def etiqueta(self):
+        return self.value
+
+
+class Estado(_EnumTexto):
+    PENDIENTE = "pendiente"
+    ASIGNADA = "asignada"
+    RESUELTA = "resuelta"
+
+    @property
+    def etiqueta(self):
+        return self.value
+
+
+class Prioridad(_EnumTexto):
+    """Cada prioridad guarda (etiqueta, orden de atención, horas máximas de respuesta)."""
+    CRITICA = ("critica", 0, 1)
+    ALTA = ("alta", 1, 2)
+    MEDIA = ("media", 2, 8)
+    BAJA = ("baja", 3, 24)
+
+    @property
+    def etiqueta(self):
+        return self.value[0]
+
+    @property
+    def orden(self):
+        return self.value[1]
+
+    @property
+    def horas_maximas(self):
+        return self.value[2]
+
+
+@dataclass
 class Solicitud:
-    def __init__(self, data):
-        self.id = data.get("id")
-        self.titulo = data.get("titulo", "")
-        self.descripcion = data.get("descripcion", "")
-        self.categoria = data.get("categoria", "otro").lower()
-        self.prioridad_str = data.get("prioridad", "baja").lower()
-        self.prioridad = PRIORIDADES.get(self.prioridad_str, PRIORIDADES["baja"])
-        self.fecha_creacion = data.get("fecha_creacion", datetime.datetime.now().isoformat())
-        self.estado = data.get("estado", "pendiente")
-        self.tecnico_id = data.get("tecnico_id", None)
-        self.tiempo_estimado = data.get("tiempo_estimado_horas", None)
+    id: str
+    titulo: str
+    descripcion: str
+    categoria: Categoria
+    prioridad: Prioridad
+    fecha_creacion: datetime
+    estado: Estado = Estado.PENDIENTE
+    tecnico_id: Optional[str] = None
+    tiempo_estimado_horas: Optional[float] = None
+
+    def clave_urgencia(self):
+        """Más urgente primero; a igual prioridad, la más antigua; el id desempata."""
+        return (self.prioridad.orden, self.fecha_creacion, self.id)
 
     def cumple_plazo(self):
-        if self.tiempo_estimado is None:
+        """None mientras no tenga tiempo estimado (no está asignada)."""
+        if self.tiempo_estimado_horas is None:
             return None
-        return self.tiempo_estimado <= self.prioridad.horas_max
+        return self.tiempo_estimado_horas <= self.prioridad.horas_maximas
 
+
+@dataclass
 class Tecnico:
-    def __init__(self, data):
-        self.id = data.get("id")
-        self.nombre = data.get("nombre", "")
-        self.especialidades = [c.lower() for c in data.get("especialidades", [])]
-        self.capacidad = data.get("capacidad", 2)
-        self.carga = data.get("carga", 0)
-        self.solicitudes_activas = list(data.get("solicitudes_activas", []))
+    """Técnico con capacidad máxima de solicitudes activas.
 
-    def puede_atender(self, categoria):
-        return not self.especialidades or categoria in self.especialidades
+    Sin especialidades significa generalista: puede atender cualquier categoría.
+    """
+    id: str
+    nombre: str
+    especialidades: list = field(default_factory=list)
+    capacidad: int = 2
+    activas: list = field(default_factory=list)
 
+    @property
+    def carga(self):
+        return len(self.activas)
+
+    @property
     def esta_disponible(self):
         return self.carga < self.capacidad
+
+    @property
+    def es_generalista(self):
+        return not self.especialidades
+
+    def puede_atender(self, categoria):
+        return self.es_generalista or categoria in self.especialidades
+
+    def asignar(self, id_solicitud):
+        if not self.esta_disponible:
+            raise ErrorSoporte(f"El técnico {self.id} ya alcanzó su capacidad máxima")
+        self.activas.append(id_solicitud)
+
+    def liberar(self, id_solicitud):
+        if id_solicitud not in self.activas:
+            raise ErrorSoporte(f"El técnico {self.id} no tiene asignada la solicitud {id_solicitud}")
+        self.activas.remove(id_solicitud)

@@ -1,24 +1,43 @@
-import json
 import datetime
+import os
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
-from modelos import Solicitud, Tecnico, PRIORIDADES, CATEGORIAS, ESTADOS
-from logica import procesar_cola_solicitudes, resolver_solicitud, generar_resumen
+
+from despachador import Despachador
+from errores import ErrorSoporte, ErrorValidacion
+from estadisticas import formatear, generar_resumen
+from modelos import Categoria, Estado, Prioridad
+from persistencia import cargar_datos, guardar_resultados
+from validacion import validar_solicitud
+
+CATEGORIAS = [c.etiqueta for c in Categoria]
+PRIORIDADES = [p.etiqueta for p in Prioridad]
+ESTADOS = [e.etiqueta for e in Estado]
+CARPETA_DATOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "datos")
 
 class VentanaPrincipal(tk.Tk):
-    def __init__(self):
+    def __init__(self, ruta_inicial=None):
         super().__init__()
         self.title("Gestión y priorización de solicitudes de soporte técnico")
         self.geometry("1180x640")
         
-        self.solicitudes = {}
-        self.tecnicos = []
+        self.despachador = Despachador([])
         self.filtros = {"categoria": "Todas", "prioridad": "Todas", "estado": "Todas", "busqueda": ""}
         
         self.orden_col = None
         self.orden_asc = True
         
         self.crear_widgets()
+        if ruta_inicial:
+            self.cargar_archivo(ruta_inicial)
+
+    @property
+    def tecnicos(self):
+        return self.despachador.tecnicos
+
+    @property
+    def solicitudes(self):
+        return self.despachador.solicitudes
 
     def crear_widgets(self):
         frame_botones = tk.Frame(self)
@@ -40,7 +59,7 @@ class VentanaPrincipal(tk.Tk):
         frame_filtros.pack(fill=tk.X, padx=5, pady=0)
         
         self.combo_cat = self.crear_combo(frame_filtros, "Categoría:", ["Todas"] + CATEGORIAS)
-        self.combo_pri = self.crear_combo(frame_filtros, "Prioridad:", ["Todas"] + list(PRIORIDADES.keys()))
+        self.combo_pri = self.crear_combo(frame_filtros, "Prioridad:", ["Todas"] + PRIORIDADES)
         self.combo_est = self.crear_combo(frame_filtros, "Estado:", ["Todas"] + ESTADOS)
         
         tk.Label(frame_filtros, text="Buscar:").pack(side=tk.LEFT, padx=(10, 2))
@@ -101,80 +120,75 @@ class VentanaPrincipal(tk.Tk):
         return combo
 
     def cargar_json(self):
-        ruta = filedialog.askopenfilename(title="Seleccionar archivo JSON", filetypes=[("JSON", "*.json")])
-        if not ruta: 
-            return
-        
+        ruta = filedialog.askopenfilename(title="Seleccionar archivo JSON", filetypes=[("JSON", "*.json")],
+                                          initialdir=CARPETA_DATOS if os.path.isdir(CARPETA_DATOS) else None)
+        if ruta:
+            self.cargar_archivo(ruta)
+
+    def cargar_archivo(self, ruta):
         try:
-            with open(ruta, 'r', encoding='utf-8') as f:
-                datos = json.load(f)
-                
-            self.solicitudes.clear()
-            self.tecnicos.clear()
-            
-            for t_data in datos.get("tecnicos", []):
-                self.tecnicos.append(Tecnico(t_data))
-                
-            for s_data in datos.get("solicitudes", []):
-                sol = Solicitud(s_data)
-                self.solicitudes[sol.id] = sol
-                
-            self.refrescar_todo()
-            self.lbl_estado.config(text=f" Cargadas {len(self.solicitudes)} solicitudes y {len(self.tecnicos)} técnicos desde {ruta.split('/')[-1]}.")
-        except Exception as e:
-            messagebox.showerror("Error", f"No se pudo cargar el archivo:\n{e}")
+            datos = cargar_datos(ruta)
+        except ErrorSoporte as error:
+            messagebox.showerror("Error", f"No se pudo cargar el archivo:\n{error}")
+            return
+        self.despachador = Despachador(datos.tecnicos, self.hilos_seleccionados())
+        for solicitud in datos.solicitudes:
+            self.despachador.registrar(solicitud)
+        self.refrescar_todo()
+        mensaje = (f" Cargadas {len(datos.solicitudes)} solicitudes y {len(datos.tecnicos)} técnicos "
+                   f"desde {os.path.basename(ruta)}.")
+        if datos.errores:
+            mensaje += f" Se omitieron {len(datos.errores)} registros inválidos."
+            detalle = "\n".join(datos.errores[:15]) + ("\n…" if len(datos.errores) > 15 else "")
+            messagebox.showwarning("Registros omitidos", f"Registros inválidos (no se cargaron):\n{detalle}")
+        self.lbl_estado.config(text=mensaje)
+
+    def hilos_seleccionados(self):
+        try:
+            return max(1, int(self.spin_hilos.get()))
+        except ValueError:
+            return 4
 
     def nueva_solicitud(self):
-        if not self.tecnicos and not self.solicitudes:
-            if not messagebox.askyesno("Sin datos", "No hay datos cargados. ¿Deseas crear una solicitud de todos modos?"):
-                return
-
         top = tk.Toplevel(self)
         top.title("Nueva solicitud")
         top.geometry("300x250")
         top.transient(self)
         top.grab_set()
 
-        tk.Label(top, text="Título:").pack(anchor="w", padx=10, pady=(10,0))
+        tk.Label(top, text="Título:").pack(anchor="w", padx=10, pady=(10, 0))
         entry_titulo = tk.Entry(top, width=35)
         entry_titulo.pack(padx=10)
 
-        tk.Label(top, text="Descripción:").pack(anchor="w", padx=10, pady=(10,0))
+        tk.Label(top, text="Descripción:").pack(anchor="w", padx=10, pady=(10, 0))
         entry_desc = tk.Entry(top, width=35)
         entry_desc.pack(padx=10)
 
-        tk.Label(top, text="Categoría:").pack(anchor="w", padx=10, pady=(10,0))
+        tk.Label(top, text="Categoría:").pack(anchor="w", padx=10, pady=(10, 0))
         combo_cat = ttk.Combobox(top, values=CATEGORIAS, state="readonly")
         combo_cat.current(1)
         combo_cat.pack(padx=10)
 
-        tk.Label(top, text="Prioridad:").pack(anchor="w", padx=10, pady=(10,0))
-        combo_pri = ttk.Combobox(top, values=list(PRIORIDADES.keys()), state="readonly")
+        tk.Label(top, text="Prioridad:").pack(anchor="w", padx=10, pady=(10, 0))
+        combo_pri = ttk.Combobox(top, values=PRIORIDADES, state="readonly")
         combo_pri.current(2)
         combo_pri.pack(padx=10)
 
         def guardar():
-            titulo = entry_titulo.get().strip()
-            if not titulo:
-                messagebox.showerror("Error", "El título es obligatorio", parent=top)
+            nuevo_id = self.despachador.siguiente_id()
+            try:
+                solicitud = validar_solicitud({
+                    "id": nuevo_id,
+                    "titulo": entry_titulo.get(),
+                    "descripcion": entry_desc.get(),
+                    "categoria": combo_cat.get(),
+                    "prioridad": combo_pri.get(),
+                    "fecha_creacion": datetime.datetime.now().isoformat(timespec="seconds"),
+                })
+                self.despachador.registrar(solicitud)
+            except ErrorValidacion as error:
+                messagebox.showerror("Dato inválido", str(error), parent=top)
                 return
-            
-            max_id = 0
-            for sol_id in self.solicitudes.keys():
-                if sol_id.startswith("S") and sol_id[1:].isdigit():
-                    max_id = max(max_id, int(sol_id[1:]))
-            nuevo_id = f"S{max_id + 1:04d}"
-
-            nueva_sol = Solicitud({
-                "id": nuevo_id,
-                "titulo": titulo,
-                "descripcion": entry_desc.get().strip(),
-                "categoria": combo_cat.get(),
-                "prioridad": combo_pri.get(),
-                "fecha_creacion": datetime.datetime.now().isoformat()
-            })
-            
-            self.solicitudes[nuevo_id] = nueva_sol
             self.refrescar_todo()
             self.lbl_estado.config(text=f" Solicitud {nuevo_id} registrada.")
             top.destroy()
@@ -182,59 +196,51 @@ class VentanaPrincipal(tk.Tk):
         tk.Button(top, text="Guardar", command=guardar).pack(pady=15)
 
     def procesar_solicitudes(self):
-        if not self.solicitudes: 
+        if not self.solicitudes:
             return
-        asignadas = procesar_cola_solicitudes(self.solicitudes, self.tecnicos)
+        self.despachador.num_hilos = self.hilos_seleccionados()
+        try:
+            asignadas = self.despachador.procesar_pendientes()
+        except ErrorSoporte as error:
+            messagebox.showerror("Error", str(error))
+            return
         self.refrescar_todo()
-        self.lbl_estado.config(text=f" Procesamiento terminado: {asignadas} solicitudes asignadas.")
+        self.lbl_estado.config(text=f" Procesamiento terminado: {asignadas} solicitudes asignadas "
+                                    f"({self.despachador.num_hilos} hilos).")
 
     def resolver_seleccionadas(self):
         seleccion = self.tabla_sol.selection()
-        if not seleccion: 
+        if not seleccion:
             return
-        
-        resueltas = 0
+        resueltas, omitidas = 0, 0
         for item in seleccion:
-            sol_id = self.tabla_sol.item(item, "values")[0]
-            sol = self.solicitudes.get(sol_id)
-            if sol and resolver_solicitud(sol, self.tecnicos):
+            id_solicitud = self.tabla_sol.item(item, "values")[0]
+            try:
+                self.despachador.resolver(id_solicitud)
                 resueltas += 1
-                
+            except ErrorValidacion:
+                omitidas += 1  # no estaba asignada
         self.refrescar_todo()
-        self.lbl_estado.config(text=f" {resueltas} solicitudes resueltas.")
+        texto = f" {resueltas} solicitudes resueltas."
+        if omitidas:
+            texto += f" {omitidas} no estaban asignadas."
+        self.lbl_estado.config(text=texto)
 
     def guardar_resultados(self):
         if not self.solicitudes:
             messagebox.showinfo("Sin datos", "No hay solicitudes para guardar.")
             return
-            
-        ruta = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON", "*.json")], initialfile="resultados.json")
-        if not ruta: 
+        ruta = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON", "*.json")],
+                                            initialfile="resultados.json")
+        if not ruta:
             return
-        
         try:
-            resumen = generar_resumen(self.solicitudes)
-            solicitudes_ordenadas = sorted(self.solicitudes.values(), key=lambda s: (s.prioridad.orden, s.fecha_creacion, s.id))
-            
-            json_sols = []
-            for s in solicitudes_ordenadas:
-                json_sols.append({
-                    "id": s.id, "titulo": s.titulo, "descripcion": s.descripcion,
-                    "categoria": s.categoria, "prioridad": s.prioridad_str,
-                    "fecha_creacion": s.fecha_creacion, "estado": s.estado,
-                    "tecnico_id": s.tecnico_id, "tiempo_estimado_horas": s.tiempo_estimado,
-                    "cumple_plazo": s.cumple_plazo()
-                })
-                
-            json_tecs = [{"id": t.id, "nombre": t.nombre, "especialidades": t.especialidades, "capacidad": t.capacidad, "carga": t.carga} for t in self.tecnicos]
-            salida = {"resumen": resumen, "tecnicos": json_tecs, "solicitudes": json_sols}
-            
-            with open(ruta, 'w', encoding='utf-8') as f:
-                json.dump(salida, f, indent=2, ensure_ascii=False)
-                
-            self.lbl_estado.config(text=f" Resultados guardados en {ruta.split('/')[-1]}.")
-        except Exception as e:
-            messagebox.showerror("Error", f"No se pudo guardar el archivo:\n{e}")
+            resumen = generar_resumen(self.solicitudes, self.tecnicos)
+            guardar_resultados(ruta, self.solicitudes, self.tecnicos, resumen)
+        except ErrorSoporte as error:
+            messagebox.showerror("Error", f"No se pudo guardar el archivo:\n{error}")
+            return
+        self.lbl_estado.config(text=f" Resultados guardados en {os.path.basename(ruta)}.")
 
     def ordenar_tabla(self, columna):
         if self.orden_col == columna:
@@ -259,14 +265,14 @@ class VentanaPrincipal(tk.Tk):
         for item in self.tabla_sol.get_children():
             self.tabla_sol.delete(item)
             
-        lista_mostrar = list(self.solicitudes.values())
+        lista_mostrar = list(self.solicitudes)
         
         if self.filtros["categoria"] != "Todas":
-            lista_mostrar = [s for s in lista_mostrar if s.categoria == self.filtros["categoria"]]
+            lista_mostrar = [s for s in lista_mostrar if s.categoria.etiqueta == self.filtros["categoria"]]
         if self.filtros["prioridad"] != "Todas":
-            lista_mostrar = [s for s in lista_mostrar if s.prioridad_str == self.filtros["prioridad"]]
+            lista_mostrar = [s for s in lista_mostrar if s.prioridad.etiqueta == self.filtros["prioridad"]]
         if self.filtros["estado"] != "Todas":
-            lista_mostrar = [s for s in lista_mostrar if s.estado == self.filtros["estado"]]
+            lista_mostrar = [s for s in lista_mostrar if s.estado.etiqueta == self.filtros["estado"]]
         if self.filtros["busqueda"]:
             lista_mostrar = [s for s in lista_mostrar if self.filtros["busqueda"] in s.titulo.lower() or self.filtros["busqueda"] in s.id.lower()]
             
@@ -275,11 +281,11 @@ class VentanaPrincipal(tk.Tk):
             def get_sort_key(sol):
                 if col_idx == 0: return sol.id
                 if col_idx == 1: return sol.titulo.lower()
-                if col_idx == 2: return sol.categoria
+                if col_idx == 2: return sol.categoria.etiqueta
                 if col_idx == 3: return sol.prioridad.orden
-                if col_idx == 4: return sol.estado
+                if col_idx == 4: return sol.estado.etiqueta
                 if col_idx == 5: return sol.tecnico_id or ""
-                if col_idx == 6: return sol.tiempo_estimado if sol.tiempo_estimado is not None else -1
+                if col_idx == 6: return sol.tiempo_estimado_horas if sol.tiempo_estimado_horas is not None else -1
                 if col_idx == 7: 
                     c = sol.cumple_plazo()
                     return 0 if c is None else (1 if c else 2)
@@ -289,33 +295,28 @@ class VentanaPrincipal(tk.Tk):
         for sol in lista_mostrar:
             tag = ""
             if sol.cumple_plazo() is False: tag = "incumple"
-            elif sol.estado == "pendiente": tag = "pendiente"
-            elif sol.estado == "resuelta": tag = "resuelta"
+            elif sol.estado == Estado.PENDIENTE: tag = "pendiente"
+            elif sol.estado == Estado.RESUELTA: tag = "resuelta"
                 
             plazo = "—"
             if sol.cumple_plazo() is not None:
                 plazo = "Cumple" if sol.cumple_plazo() else "Excede"
                 
-            tiempo = f"{sol.tiempo_estimado:.2f}" if sol.tiempo_estimado is not None else "—"
+            tiempo = f"{sol.tiempo_estimado_horas:.2f}" if sol.tiempo_estimado_horas is not None else "—"
             tecnico = sol.tecnico_id if sol.tecnico_id else "—"
             
-            self.tabla_sol.insert("", tk.END, values=(sol.id, sol.titulo, sol.categoria, sol.prioridad_str, 
-                                                      sol.estado, tecnico, tiempo, plazo), tags=(tag,))
+            self.tabla_sol.insert("", tk.END, values=(sol.id, sol.titulo, sol.categoria.etiqueta, sol.prioridad.etiqueta,
+                                                      sol.estado.etiqueta, tecnico, tiempo, plazo), tags=(tag,))
 
     def refrescar_estadisticas(self):
-        resumen = generar_resumen(self.solicitudes)
-        por_prioridad = resumen["por_prioridad"]
-            
-        resumen_txt = f"Total de solicitudes: {resumen['total']}\n"
-        resumen_txt += f"En cola (sin técnico): {resumen['en_cola']}\n"
-        resumen_txt += f"Por prioridad: critica={por_prioridad.get('critica', 0)}, alta={por_prioridad.get('alta', 0)}, "
-        resumen_txt += f"media={por_prioridad.get('media', 0)}, baja={por_prioridad.get('baja', 0)}\n"
-        
+        resumen = generar_resumen(self.solicitudes, self.tecnicos)
+        por_prioridad = resumen.por_prioridad
+
         self.txt_resumen.config(state=tk.NORMAL)
         self.txt_resumen.delete(1.0, tk.END)
-        self.txt_resumen.insert(tk.END, resumen_txt)
+        self.txt_resumen.insert(tk.END, formatear(resumen))
         self.txt_resumen.config(state=tk.DISABLED)
-        
+
         self.dibujar_barras(por_prioridad)
         
         for item in self.tabla_tec.get_children():
