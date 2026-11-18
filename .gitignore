@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Java / Maven
+target/
+*.class
+
+# C# / .NET
+bin/
+obj/
+.vs/
+*.user
+
+# Editores y sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Resultados generados al guardar desde la interfaz
+datos/resultados*.json
